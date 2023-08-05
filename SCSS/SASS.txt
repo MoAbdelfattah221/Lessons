@@ -1,0 +1,381 @@
+                                        SASS
+                                           -------
+
+
+
+<-- Start Lesson 1 -->
+ 1-Introduction and What Is SASS
+  1-SASS is stand for Syntactically Awesome Style Sheets.  
+  2-SASS is an Extenison for CSS
+  3-Skill for Frontend Developers
+  4-SASS is a Preprocessor
+  
+ 
+ 2-What is SASS's features ? 
+  1-Save Time
+  2-Make Less Error
+  3-Clean and Organize the code
+  4-Programming Features 
+  
+Notes...
+1-the Compilaer convert SASS to CSS. 
+<-- End Lesson 1 -->
+
+
+
+
+
+<-- Start Lesson 2 -->
+ 1-SASS Compilation Tools
+  1-the extenison of the SASS file is .scss
+  
+  2-How can we complie SCSS to CSS
+   1-SASSmeister website
+   2-Codepin and selecte SCSS Preprocessor and select view compiled CSS
+   3-VS code and make a file with scss extension and reun it when we run it , it will create a css file automatic with and compiled the data to it.
+   4-Koala programme
+   5-Prepros programme
+  
+<-- End Lesson 2 -->
+
+
+
+
+
+<-- Start Lesson 3 -->
+ 1-Import And Use And Advanced Architecture
+  1-if we want to import a file we use 
+   @use "File Path";
+   
+Notes...
+1-if we want to make a SCSS file and we don't wan't to compile it into CSS we put _in the first of the file name
+<-- End Lesson 3 -->
+
+
+
+
+
+<-- Start Lesson 4 -->
+ 1-Variables
+  1-if we want to insitliaze a variable we make 
+   $variable_name: value;
+  
+  2-when we want to use this variable we make 
+   header{
+   	color: $variable_name;
+   }
+   
+  3-also here we have two types of variabels Global and Local
+
+  4-if we want to convert local to global we use 
+   localVariable: value !global;
+
+Notes...
+1-the local variabel we initalized it inside the property
+<-- End Lesson 4 -->
+
+
+
+
+
+<-- Start Lesson 5 -->
+ 1-Nesting And Parent Element
+  1-if we want to make a nested properties we don't need to write the parent name 
+  .property{
+  	font-size: 10px;
+  	.child{
+  		font-size: 5px;
+  	}
+  }
+  
+ 2-Grouping is same in css
+ 
+ 3-Advanced Seclectors
+ 
+ 4-& stand for the parent 
+  &.red => it's means the parent that has a class which called red 
+ 
+<-- End Lesson 5 -->
+
+
+
+
+
+<-- Start Lesson 6 -->
+ 1-Property Declarations And Placeholder
+  1-We have a shot hand code for font look
+   .box{
+     font: {
+        size: 15px;
+        weigth: bold; 
+     }
+   }
+   
+ 2-We can control the property with making 
+  .property{
+    margin: auto{
+      top: 10px;
+      bottom: 20px;
+    }
+  }
+   
+   
+ 3- if we have more than properties and we using it in more than place we make 
+  %properties{
+   background-color: red;
+   color: white;
+  }
+  .child{
+   @extend %properties;
+  }
+ 
+ 4-if we want to make a class store in it the properties we put before it %{
+  %class{
+   background-color: red;
+   color: white;
+  }
+ }
+ 
+Notes...
+1-that mean child took the properties which were in .properties class.
+2-if we want to make a class store in it the properties we put before it %.
+<-- End Lesson 6 -->
+
+
+
+
+
+<-- Start Lesson 7 -->
+ 1-Control Flow – If And Else
+  1-if syntax 
+   @if condition {
+     // Code Here 
+   } @else{
+    // Code Here
+   }
+   
+ 2-We can using if condition inside the properties look 
+  $rounded: "true";
+  .main{
+   border-radius: if($rounded , 6px , null); 
+   // that's means if the rounded = true put this property with this value border-radius: 6px , null if the value not true;
+  }
+   
+ Note...
+ 1-we don't put the condition in a practice
+<-- End Lesson 7 -->
+
+
+
+
+
+<-- Start Lesson 8 -->
+ 1-Create Triangle With If And Else
+  1-Training 
+
+Notes...
+1-we can use @error "msg"';
+<-- End Lesson 8 -->
+
+
+
+
+
+<-- Start Lesson 9 -->
+ 1-Interpolation
+  1-interpolation syntax #{};
+  2-By interpolation we can add any axpertion or variable name in sass
+<-- End Lesson 9 -->
+
+
+
+
+
+<-- Start Lesson 10 -->
+ 1-Comments And Documenting
+  1- // This comment will not show in css file
+  2- /* This comment will show in css file but not compressed mode */
+  3- /*! This comment will show in css file but and in compressed mode */
+  4- /// Documintion comment
+<-- End Lesson 10 -->
+
+
+
+
+
+<-- Start Lesson 11 -->
+ 1-Mixin And Include
+  1-when we make mixin we should use @include to use this mixin 
+   1-mixin syntax
+    @mixin mixinName ($parmeter) {
+      // Code Here
+       width: $parameters;
+    }
+    if we want to use if 
+    .class{
+       @include mixinName;
+    }
+    
+    
+Notes...
+1-we don't need in all cases to have a parameters;
+<-- End Lesson 11 -->
+
+
+
+
+
+<-- Start Lesson 12 -->
+ 1-Loop – For
+  1-For loop syntax 
+   @for $i from 1 through 10{
+     // Code Here
+   }
+   
+Notes...
+1-there is a diffrent between through and to
+2-Through  means it will take all numbers from 1 to 10 with the last number 10
+3-To means it will take all numbers it will take all numbers - 1
+<-- End Lesson 12 -->
+
+
+
+
+
+<-- Start Lesson 13 -->
+ 1-Loop – Each And Map
+  1-each syntax
+   @each variableName in variableName2 {
+     // Code Here
+   }
+  
+  
+  1-Example
+  ------------
+  $themes: red , green , blue;
+  @each $theme in $themes{
+    .#{theme}-theme{
+    	background-color: #fff;
+    	border-bottom: 2px soild #{$theme};
+    	.title{
+    	  color: #{$theme};
+    	  font-weight: bold;
+     	}
+    }
+  }
+  
+  
+  2-Example
+  --------------
+  $socials: ("facebook": "blue" , "youtube": "red", "github": "black");
+  @each $name , $color in $socials{
+   .#{$name}{
+     background-color: #{$color};
+   }
+  }
+  
+   
+Notes...
+1-we can use more than variable in each syntax  
+<-- End Lesson 13 -->
+
+
+
+
+
+<-- Start Lesson 14 -->
+ 1-Loop – While
+  1-While Syntax 
+   @while condation{
+     // Code Here;
+     increament vaariable
+   }
+<-- End Lesson 14 -->
+
+
+
+
+
+<-- Start Lesson 15 -->
+ 1-Create Bootstrap Grid System
+  1-if we want to make bootstarp grid system we will make 
+   $grid_columns: 12;
+   for $i from 1 trougth $grid_columns{
+     .col-{i}{
+      width: percentage($i / grid_columns);
+     }
+   }
+   
+ Notes...
+ 1-percentage is a bult in method to calc the percentage 
+  percentage syntax ($number , 0)
+<-- End Lesson 15 -->
+
+
+
+
+
+<-- Start Lesson 16 -->
+ 1-Function
+  1-Function syntax
+  @function function_name($size){
+   @return $size / 2;
+  }
+  .element{
+   width: function_name(100px); // the return value will be 50
+  }
+  
+  
+ 2-We can also make rest function 
+ @function calc($sizes...){
+  $total = 0;
+  @each $size in $sizes{
+   $total: $total + $size;
+  }
+  @return $total;
+ }
+<-- End Lesson 16 -->
+
+
+
+
+
+<-- Start Lesson 17 -->
+ 1-Practice Mixin With Content
+  1-when we use content then we will put the content by our hand 
+  
+  Example
+  ---------
+  @mixin keyF ($key-name){
+   @-webkit-keyframs #{$key-name}{
+     @content;
+   }
+   @keyframs #{$key-name}{
+     @content;
+   }
+  }
+  
+  @include keyF ($key-name){
+   // Code Here
+  }
+  
+Notes...
+1-@content is stand for the properties of the element  
+<-- End Lesson 17 -->
+
+
+
+
+
+<-- Start Lesson 18 -->
+ 1-Practice Create Media Queries Mixin
+  1-Practice - Video number 18
+<-- End Lesson 18 -->
+
+
+
+
+
+<-- Start Lesson  19 -->
+ 1-The End And How To Master SASS.
+<-- End Lesson  19 -->
