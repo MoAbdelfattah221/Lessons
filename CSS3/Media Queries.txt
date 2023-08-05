@@ -1,0 +1,62 @@
+                    <---Media Queries--->
+                  -------------------------
+                  
+We Use Media Queries To Make a Respoinsive Websites.
+
+The Formila of Media Queries 
+
+@media (Condition) {
+ Element{
+  codes
+ }
+}
+
+-----------------------------------------------------  
+
+
+The Sizes Of Screens 
+---------------------
+
+
+
+<<---Start Small Screen--->> 
+
+ @media (min-width: 768px){
+  .container{
+   width: 750px
+  }
+ }
+
+<<---End Small Screen--->>
+
+
+
+<<---Start Medium Screen--->>
+ 
+ @media (min-width: 992px){
+  .container{
+   width: 970px
+  }
+ }
+
+<<---End Medium Screen--->>
+
+
+
+<<---Start Large Screen--->>
+ 
+ @media (min-width: 1200px){
+  .container{
+   width: 1170px
+  }
+ }
+
+<<---End Large Screen--->>
+
+
+
+
+
+
+
+

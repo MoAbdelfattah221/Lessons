@@ -1,0 +1,749 @@
+<--- Start Lesson 1--->
+1-Introduction
+ 1-What is React ? 
+  1-React is a javascript Library
+  2-Created by Facebook
+  3-it's use SPA (Single Page Application)
+  4-Dynamic web apps
+  
+ 2-What we should know to join the Course
+  1-HTML
+  2-CSS
+  3-JS
+  4-OOP
+ 
+ 3-What is SPA ? 
+  A single-Page application is an app that does't need to reload the page 
+  during it's use and works within the browser.
+ 
+ 4-Core Concepts of React.js
+  1-Components
+  2-JSX --- stand for (Javascript XML)
+  3-Virtual DOM
+  
+ 5-Defing Algorithm
+ 
+ 6-Setup React.js using CDN links and BABEL link
+ 
+ 7-give the script tag type attribute and give it text/babel value
+ 
+ 8-How to write JSX and render it
+  let ele = <p>Hello World !<p/>
+  ReactDOM.render(ele , where i will put it)
+ 
+ 9-if we want to make any exprisson we use {exprission}
+ 
+ 10-if we will put more than one element inside an element we use ()
+ 
+ 
+Notes...
+1-BABEL convert the JSX into JS
+<--- End Lesson 1--->
+
+
+
+<--- Start Lesson 2--->
+1-React.js Structure Manual
+ 1-Public Folder
+  2-JS Folder
+   1-main.js
+  3-index.html
+  
+2-SRC Folder
+ 1-index.html
+ 
+3-CDN Links
+
+4-BABEL Link
+
+5-we write JSX in the main.js folder
+
+6-setup babel
+ npm install -g babel-cli
+
+7-setup preset-env , preset-react
+ npm install babel-preset-react babel-reset-env
+
+8-then we can convert JSX to js from the index.js file to main.js file by making
+ npx babel index.js Path --out-file=main.js Path --preset=env,react
+
+9-if we want to make any expressions we use {}
+
+10-condations are the same in JS
+
+11-&& condation 
+   we can use another way of condation 
+   {condation && result};
+   if the condation = true && exist this code
+ 
+12-Atrributes in JSX
+ 1-className = class
+ 2-htmlFor = for
+ 3-selected = selected
+ 4-value = value
+ 5-readOnly = readonly
+ 6-action = action
+ 7-alt = alt 
+ 8-checked = checked
+ 9-controls = controls
+ 10-disabled = disabled
+ 11-href  = href 
+ 12-hidden = hidden  
+
+13-Events in JSX
+ 1-onChange
+ 2-onLoad
+ 3-onSubmit
+ 4-onCkick
+<--- End Lesson 2--->
+
+
+
+<--- Start Lesson 3--->
+1-Forms & Input
+2-Events
+3-mapArray
+4-Object
+
+// we made in this video To-Do list
+
+Notes...
+1-we must close the self closing tag 
+2-when we using events in React we use it inside the JSX
+3-if we will write any dynamic thing we put it inside {}
+<--- End Lesson 3--->
+
+
+
+<--- Start Lesson 4--->
+1-Component
+ 1-Commponent is a part of Code we can using it more than on time 
+ 2-Component Syntax
+  class ComponentName extends React.Component{
+   render(){
+    return <div><div/>
+   }
+  }  
+
+ 
+Notes...
+1-the first litter in the component name must to ba capitalized
+2-render function returns a JSX
+3-when we call the component we put it inside a <ComponentName />
+<--- End Lesson 4--->
+
+
+
+<--- Start Lesson 5--->
+1-Props
+ 1-Props stands for Properties
+ 2-Props are like HTML Attributes (name = "value")
+ 3-Props pass data from the parent component to the child component
+ 4-Props are immutabe (not changed)
+
+2-Example
+------------
+class App extends React.Component{
+ render(){
+   return (
+     <Header title="Header"/>
+   )
+ }
+}
+
+class Header extends React.Component{
+ render(){
+   return (
+     <header>{this.props.title}<header/>
+   )
+ }
+}
+
+
+2-State
+ 1-State is a Privete object related to component
+ 2-if we want to inisialize a state we make 
+  constructor(){
+    super();
+    this.state = {
+      name = "value";
+    }
+    OR
+   }
+   state = {
+     name = "value";
+   }
+
+  render(){
+  	return 0;
+  }
+ 
+ 3-if we want to access our state we make this.state
+ 
+ 4-we can transfer the state to another component by make a new prop and pass it's value as a state 
+  name={this.state}
+  
+ 5-we can change the state values by using setState method
+  write it inside the consturctor
+   this.changeTitle = () => {
+    this.setState({
+     name: "the new value";
+    })
+   }
+ 
+ to run it 
+ <button onClick={this.changeTitle}> Change <button/>
+  
+ 
+Notes...
+1-if we want to make a new Prop we make it when we calling the component // <Header title="Hi"/>
+2-we can use the Prop which we made in the child Component by making // <header> { this.props.title } <header/>
+3-this is stand for the component which am i in
+4-this.props = it will give us all the props
+5-if we need a spesific prop we make {this.props.title}
+6-we initalize the state inside the component before the render function.
+7-if we want to access all states we make this.state
+8-if we want to access a spesific state we make this.state.stateName
+9-we can use the props anyWhere
+10-we can't use the state anyWhere so we need to pass state as a value to any prop
+11-we can change the state 
+12-we can't change the prop 
+
+<--- End Lesson 5--->
+
+
+
+<--- Start Lesson 6--->
+1-Advanceed To Do List Project
+Note...
+1-if we declare a function out of the constructor it will give us an error 
+because it will not can understand ( this ) // here this is the window object
+
+so if we want to solve this error we going to the constructor and write 
+this.functionName = this.functionName.bind(this)
+
+here we told the brower this is not belong to the window object , 
+but belong to the component object.
+<--- End Lesson 6--->
+
+
+
+<--- Start Lesson 7--->
+1-We have 2 kinds of components 
+ 1-StateFull (Class based Comp)
+ 2-StateLess (UI) (Function)
+ 
+2-The StateFull component is the component which have a state and make  a functional task
+
+3-The StateLess Component is the Component which haven't a State inside it and just makes Styling
+
+4-Stateful Component Example
+------------------------------------
+ class App extends React.Component{
+        constructor(){
+            super();
+            this.state = {
+                products: [],
+                item: "",
+            }
+            this.handleChange = (e) => {
+                this.setState({
+                    item: e.target.value,
+                })
+            }
+            this.handleSubmitting = (e) => {
+                e.preventDefault();
+                let products = [...this.state.products , {
+                    id: Math.random(),
+                    name: this.state.item,
+                }];
+                this.setState({
+                    products: products,
+                    item: "",
+                })
+            }
+            this.deleteItem = (id) => {
+                products = [...this.state.products];
+                let newProducts = products.filter(product => product.id != id);
+                this.setState({
+                    products: newProducts,
+                })
+            }
+        }
+        render(){
+            return(
+                <div>
+                    <AddItem updateValue = {this.handleChange} submitting = {this.handleSubmitting} value = {this.state.item}/>
+                    <ListItem products = {this.state.products} removeItem={this.deleteItem}/>
+                </div>
+            )
+        }
+    }
+
+
+5-StateLess Componenet Example (Class)
+---------------------------------------
+class App extends React.Component{
+ render(){
+            return(
+                <div>
+                    <AddItem/>
+                    <ListItem/>
+                </div>
+            )
+        }
+}
+
+6-StateLess Componenet Example (Function)
+--------------------------------------------------
+const Item = () => {
+	return(){  
+		<ListItem/>
+	}	
+}
+
+
+7-If we want to make a map for a function we make 
+class App extends React.Component{
+	constructor{
+		super();
+		this.state = {
+			products: [
+				{id: 1 , productName: "Pro1"},
+                			{id: 2 , productName: "Pro2"},
+                    		{id: 3 , productName: "Pro3"}
+			]
+		}
+	}
+	render(){
+		{this.state.products.map( (product) => <div key={product.id}> {product.productName} </div>)}
+	}
+}
+
+
+8-If we want to make computed proprety we put it inside [].
+
+
+Notes...
+1-We give the element a Key if we will make maping or iteration on it.
+<--- End Lesson 7--->
+
+
+
+<--- Start Lesson 8--->
+1-If we want to setup react app with NPM we make
+ 1-npx create-react-app "AppName"
+ 2-cd "AppName"
+ 3-npm start
+
+2-Node Moduls
+ This is the folder which have all the dependencies of the website
+
+3-Public 
+ This is the folder which have the Html File
+
+4-SRC
+ This is the folder which have the react files
+
+5-Gitignore
+ This is the file which ignore all the files which we don't need when we uploading to github.
+
+6-Packchage.json
+ This is the file which have all the scripts of the npm and the dependencies
+
+7-If we want to import a file from another we must to export it first in it's file
+
+
+8-If we will import just one variable => import Example
+-------------------------------------------------------------
+import { varibleName } from "path";
+
+9-If we will export just a one thing from a one file when we importing it we don't need to put it inside a {} and 
+when we export it we add default after the export
+
+10-If we export anything with export default we can import it with any  name wihout {}
+
+11-If we want to bulid a good structure we should to create a folder for components in the SRC folder and add inside it the components
+ header.js
+ footer.js
+
+12-We write the css code and import it bt this way 
+ import "path";
+
+13-If we want to import an image we make
+ import imageName from "path";
+
+
+Notes..
+1-If we have any problems with installing create-react-app we should to make 
+ npm cache clear --force
+
+2-If we want to run any script from package.json
+ npm the script name
+ 
+3-We can delete setupTest.js , reportWebVital.js , App.test.js and Logo.svg
+ 
+4-We have more than shortcut to write the structure of the component 
+ Class => rcc ( React Class Component )
+ Function => rfc ( React Functional Component )
+<--- End Lesson 8--->
+
+
+
+<--- Start Lesson 9--->
+1-HOC, Context, Render Props
+ 1-Lifecycle Methods
+  1-Every Component in React has a lifecycle
+  
+  2-The Stages of the lifecycle
+  ---------------------------------
+   1-Mounting [ React adds this component in the DOM ] 
+    1-The methods of Mounting stage
+    --------------------------------------
+     1-constructor
+     2-getDerviedStateFromProps
+     3-render
+     4-componentDidMount
+     
+     
+   2-Updating
+    1-The methods of Updating stage
+     --------------------------------------
+     1-getDerviedStateFromProps
+     2-shouldComponentUpdate
+     3-render
+     4-getSnapshotBeforeUpdate
+     5-componentDidUpdate
+
+    
+   3-UnMounting [ React removes this component from the DOM ] 
+    1-The methods of UnMounting stage
+     ----------------------------------------
+     1-componentWillUnmount
+   
+   
+   4-getDerivedStateFromProps method syntax
+    --------------------------------------------------
+    static getDerivedStateFromProps method (props , state){
+      return {
+      	// Code Here as an Object
+      }
+    }
+  
+  
+  5-componentDidMount method syntax
+  -------------------------------------------
+  componentDidMount(){
+   // Code Here
+  }
+  
+  6-shouldComponentUpdate(nextprops , nextstate){
+  	return Boolean value;
+  }
+  
+  7-getSnapshotBeforeUpdate(preveprops , prevestate){
+  	// Code Here
+  }
+  
+  
+  8-componentDidUpdate(preveprops , prevsstate){
+  	// Code Here
+  }
+  
+  9-componentWillUnmount(){
+  	// Code Here
+  }
+  
+ -----------------
+ 2-Keyfragment
+ -----------------
+  1-The Fragment is a placebo parent
+  2-If we want to use it we must to import it from react
+   import Fragment from "react"
+  
+  
+ --------------------
+ 3-Pure Component
+ --------------------
+  1-If we want to use the PureComponent we import it 
+   import { PureComponent } from "react";
+  
+  2-PureComponent Syntax
+  -----------------------------
+  class App extends PureComponent{
+   render(){
+    return(
+    	// Code Here
+    )
+   }
+  }
+ 
+  3-The PureComponent compare the preveState and with the new if there update it will rerender if not it will not render.
+ 
+ --------
+ 4-HOC 
+ --------
+  1-HOS is stands for Higher Order-Components
+  2-By using HOS we can share our logic
+  3-The HOC take a componenet as an argument and return a new one
+  4-If we will rename a HOC componenet it must to start ( with )
+  5-HOC Syntax
+  ----------------
+  import React , { Component } from "react";
+  
+  const withCom = (OrignalComponent) => {
+  	return class NewCom extends Component{
+  		render(){
+  			return <OrignalComponent/>
+  		}
+  	}
+  }
+  
+  export default withCom;
+  
+  6-If we want to use the HOC we import it first and then in the export stage we write the name of the HOC function ( The Component Name )
+  7-Then we create a props inside the returns component.
+  8-We have another way to use the HOC by making 
+  but we will write it before the return function
+  
+  const {name , update} = this.props
+  and we will write the function without using this.props
+  
+  9-If we have a componenet and use it as a HOC if we give it a props it will goes to the the HOC Componenet 
+  not to the compoenet which i send to it the props
+  10-If we want to send all the props which inside the HOC compoenet we write {...this.props} as a prop
+  
+ ------------------  
+ 5- Render Props 
+ ------------------
+  1-The render props is the same idea of the HOC but the deffrent that we return a function in the props.
+  2-When will we call the function which inside the reder props we will make this {this.props.test()}.
+  3-We can give arguments to this function and put the parameters inside it as we like
+  4-We write the paramerters inside the renderprops componenet
+  5-How to send the props inside another componenet
+   1-We should to write this syntax in the App component
+    <RenderPropsComponent   prop={(arg1 , arg2) => <TheComponentWhichIWantToSendToItTheProps prop={arg1} prop2={arg2} />}      />
+    
+    
+ --------------------------  
+ 6-Refs - Callback Refs
+ --------------------------
+  1-Refs is stands for reference
+  2-Refs is a technic helps us to access our DOM by direct way.
+  3-The best practice of the refs to make an automatic foucs on a spesific input when the window loaded.
+  4-To start using Ref we must to import it { creaeteRef }.
+  5-We have 2 ways to create Refs.   
+  6-The first way
+     -----------------
+  We writeing the logic inside the consturctor 
+   consturctor(props){
+   	super(props);
+   	this.name = this.createRef();
+   }
+   
+   <input ref={this.name} />
+   
+   componenetDidMount(){
+   	this.name.current.foucs();
+   }
+
+  7-The second way
+  --------------------
+   1-open the constructor and give it the props
+   2-and also give the props for the super
+   3-then create a propery and give it a null value
+   4-then create a function and give it the ele as a parameter
+   5-inside this function we will put the property which we decleared = the ele which we passed to the function
+   6-then decleare cdm function and compare inside it if the property doesn't = null 
+   7-focus on the property.
+  
+  Example
+  ---------
+  import React, { Component} from 'react';
+
+class Refs extends Component {
+    constructor(props){
+        super(props);
+        this.callbackRef = null;
+        this.callbackRefFunc = (ele) => {
+            this.callbackRef = ele;
+        }
+    }
+
+    componentDidMount(){ 
+        if(this.callbackRef != null){
+            this.callbackRef.focus();
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <input type="text" ref={this.callbackRefFunc}/>
+            </div>
+        )
+    }
+}
+export default Refs;
+  
+  
+ ----------------
+ 7-Context API
+ ----------------
+  1-If we want to pass a prop from a component to another but in the way we will find other componenets we should to
+   pass the props for them firstly to can arrive to the final componenet and this called ( props drilling ).
+  2-So if we want to avoid this problem we use contextAPI.
+  3-The context is a  way to can pass a spesific prop to a spesific componenet. 
+  4-To start using the contextAPI we make 
+    1-declare a new componenet.
+    2-import React.
+    3-decalre a variable // const context = React.createContext();
+    4-declare a provider from the main variable // const ContextProvide = context.provider;
+    5-declare a consumer from the main variable // const ContextConsumer = context.consumer;
+    6-export the { ContextProvide  ,  ContextConsumer }
+    7-going to the componenet which have the data which we want to share
+    8-import the provider
+    9-Rap every thing inside the provider and give it a prop {value = {the code which i want to share}.
+    10-going to the componenet which i want to put my data inside it
+    11-import the consumer
+    12-decleare an arrow function
+    13-decleare inside it a parameter which it will be the value 
+    14-return inside it the parameter which we declared ( value )
+    
+    
+  
+  
+  
+ ------------------------ 
+ 8-React Router DOM
+ ------------------------
+  1-The Routes are the links in our project.
+  2-To using Routes we msut to download react router dom ( npm i react-router-dom )
+  3-Import the brower reouter ( import { BrowserRouter , Route} from "react-router-dom"; )
+  4-We using this < BrowserRouter > to rap all the and put inside it <Routes/> and put the <Route/> inside it.
+  5-We write the routes inside the BrowserRouter.
+  6-<Route path="" element={} />.
+  7-path is the path of the page.
+  8-componenet is the component which i want to run when I be in this path.
+  9-"/" this is path means the home page.
+  10-we put this property to specific the path { exact }.
+  11-after make the routes we make the navbar.
+  12-then we render the Navbar component inside the BrowserRouter.
+  13-We should to useing NavLink or Link to don't reload the page.
+  14-To use it we import it from react router dom.
+  15-So I write NavLink insted the anchor tag ( a ).
+  16-To write the path we write it inside a property which called to = "".
+  17-The deffrence between NavLink and Link is the active class // NavLink has an actice class.
+  18-To change tha value of the active class we write this property classActiveName="new name".
+
+
+
+
+  ------------------
+  9-Route Params
+  ------------------
+  1-If we will write a variable value in the path we don't write it inside {} we write it after :variable value
+  2-Example
+  ------------
+  <BrowserRouter>
+  	<Routes>
+  		<Routes path="/aboutus/:variableValue" element={ComponenetName}>
+  	</Routes>
+  </BrowserRouter>
+  
+  3-Declare a StateFull component which called PostList which will have all the posts which we want 
+  4-We will declare a property inside the state which called list
+  5-This list will be an array of objects
+  6-Every object has two properties inside it ( name , id )
+  7-The id will be the key
+  8-The name will be the post content
+  9-Then we should to make a new route by the dynamic path and then put it inside the navbar with a new link
+  10-Then declare a component which called post ( whis will be the post will be renderd)
+  11-Then going to the Routes and add the new route which will be dynamic and add the post component to this route
+  12-inside the post component if I want to access the id { this.props.match.params.id }
+  13-then going to the postList component and list all the data inside it 
+       
+  
+ ------------------- 
+ 10-Query String
+ -------------------
+ 1-query string, extension of a website’s uniform resource locator (URL) that sends additional information to a database.
+ The information within the parameters is sent in the form of key-value pairs (sometimes referred to as field-value pairs,
+ name-value pairs, or attribute-value pairs). The key is a constant defining a data set (e.g., country). The value is a variable 
+ belonging to that set (e.g., Germany).
+ 
+ 2-Query String Example
+ ---------------------------
+ https://example.com/over/there?name=ferret
+ 
+ 3-If we want to access the query string we make { this.props.location.search }.
+ 
+ 4-If we want to split the query string we install a library which called  query-string
+  // npm i query-string
+  
+ 5-Then import it // import queryString from "query-string"
+  
+ 6-query-string Library takse the query string and convert it to Object 
+  by this way it will be easy for us to can access it.
+ 
+ 7-https://example.com/over/there?name=ferret
+  1-name is the key
+  2-ferret is the value
+ 
+ 8-If we want to use it we declare a variable
+ // const str = rueryString.parse(this.props.location.search)
+  console.log(str.name) // ferret
+ 
+ 
+ ------------------------------------ 
+ 11-Axois [ Get , Post ] Requests
+ ------------------------------------ 
+ 1-Axios is a library which help use to make Requests
+ 2-If we want to use it we make // npm i axios 
+ 3-Then import it // import axios from "axios"
+ 4-We can send requests at the CDM function
+ 5-If we want to get a request we use get method
+ 6-If we want to send a request we use post method
+ 
+ 
+ 
+ 
+ Notes...
+ 1-The Constructor will be the first thing calling in the app.
+ 2-The best way to put the state is to put it inside the Constructor.
+ 3-We just can make requests with componentDidMount.
+ 4-The getDerviedStateFromProps will be the second thing calling in the app.
+ 5-The render method will be the Third thing calling in the app.
+ 6-The componentDidMount mwthod will be the last thing calling in the app.
+ 7-All of this method we can use before the render method.
+ 8-If we using gdsfp and we will not return anything we can return null.
+ 9-gdsfp working every time we make update.
+ 10-We use scu if we want to compare the update of the old and the new state.
+ 11-scu return a boolean value.
+ 12-gsbu its works between the update and before this update saves in the react dom.
+ 13-cdu starts work after the component works.
+ 14-When we remove the component from the dom the cwu will start working.
+ 15-We using Fragment if we want to skip the div dad and make it transparent
+ 16-If we have a regurel component and we render it , it will be rerender and also the childern inside it will be rerenderd.
+ 17-The PureComponent is good for the performance if we have a component will not update it.
+ 18-PureComponent Implements automatice inside it scu.
+ 19-If we have 2 componenets have the same code the diffrence just in the state and have the main parent we need to use HOC or RenderProps.
+ 20-By using the render props technic we can share the code via the props.
+ 21-In the RederProps if we will send the data to more than componenet we just will copy past the line with the new component name
+ 22-The best practice in the render props componenet to name the prop by render.
+ 23-The provider is the data which i will share.
+ 24-The Consumer is the place of the data which i want to put it in.
+ 25-If we want to add a style to any element we put it inside two {} // {{display: "block"}}
+ 26-If we want to use a face API we search for json placeholder
+<--- End Lesson 9--->
+
+
+1-Terminologies
+ 1-SPA
+ 2-Component
+ 3-Props
+ 4-State
+ 5-StateFull
+ 6-StateLess
+ 7-Virtual DOM
+ 8-Props Drilling

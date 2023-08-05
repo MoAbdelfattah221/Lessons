@@ -1,0 +1,188 @@
+<---Start Lesson 102-->
+1-What Is BOM ?
+<---End Lesson 102-->
+
+
+
+
+<---Start Lesson 103-->
+1-Alert, Confirm, Prompt
+ 1-if we want to make a message to the user we make 
+  window.alert("test");
+  
+  
+ 2-if we want to check a message we use confirm method
+  let msg = confirm("are you sure ?");
+  console.log(msg)
+ 
+ 
+ 3-if we want to write a data we use promet method 
+  console.log(promot("The Main Message" , "The Placeholder Message"));
+  
+  
+Notes...
+1-the alert stops anything in the page until it is removed.
+2-the confirm method gives us the choice between yes or now and returns Boolean value.
+3-the prompt method collects the data from the user.
+<---End Lesson 103-->
+
+
+
+
+<---Start Lesson 104-->
+1-setTimeout and clearTimeout
+ 1-if we want to make a specific action but after a specific time we use 
+  setTimeout(Function , Timeout in ml , Argument);
+  
+  Ex
+  ---
+  setTimeout(function(){
+  	console.log(`Hi !`)
+  } , 3000)
+  
+  
+ 2-if we want to clear the timeout we make
+  clearTimeout(the variable which used in setTimeout)
+  
+  
+Notes...
+1-if we want to make a clearTimeout we should put the function of set timeout in a function 
+<---End Lesson 104-->
+
+
+
+
+<---Start Lesson 105-->
+1-setInterval and clearInterval
+ 1-setInterval(Function , Timeout in ml , Argument);
+ 
+ 
+ 2-clearInterval(the variable which used in the setInterval)
+ 
+ 
+Notes...
+1- the setInterval looks like setTimeout in the job but the difference is that the setInterval make loop more than one time. 
+2-The time here is between the call and another.
+<---End Lesson 105-->
+
+
+
+
+<---Start Lesson 106-->
+1-Window Location Object
+ 1-to get the location of the page we write
+  location.
+  
+2-to get the href of the location we write
+ location.href.
+ 
+3-to get the host we use
+ locatio.host
+ 
+4-to get the name of the website we use
+ location.hostname
+ 
+5-to get the protocol of the website we use 
+ location.protocol.
+
+6-to get the hash we use
+ location.hash
+
+7-if we want to reload the page we use 
+ location.reload()
+
+8-if we want to replace the url of our page we use   
+ location.replace("url")
+
+9-if we want to replace the url of our page we use and want to save the entry in history we use
+ location.assign("url")
+
+
+
+Notes...
+1-the location object is one of the important objects in the window.
+2-href doesn't delete the entry from the history.
+3-we can arrive to a specific element in the page by using /#theClassNameOfElement
+4-the host shows us the port which we login from.
+5-the replace method delete the page from the history
+<---End Lesson 106-->
+
+
+
+
+<---Start Lesson 107-->
+1-Window Open And Close
+ 1-if we want to close a window we use 
+  window.close().
+  
+ 2-if we want to open a new page we use
+  window.open("url" , "TarretAtrr" , "window features")
+  
+  EX
+  ---
+  window.open("https://google.come" , "_blank" , "width=200,height=200,left=100,top=100");
+  
+Notes...
+1-we can't close the pages which are not opened by JS.
+2-all of the open method are Optional
+3-in the window.features we don't write the px
+<---End Lesson 107-->
+
+
+
+
+<---Start Lesson 108-->
+1-Window History Object
+ 1-to get the numbers of the pages which in the history we use
+  history.length
+  
+ 2-to go one step back we use 
+  history.back()
+  
+ 3-to go one step near we use 
+  history.forward()
+  
+ 4-to move to any page which i visited we use
+  history.go(page number).
+  
+  
+Notes...
+1-when we using history.go and want to going back we write a negative number
+<---End Lesson 108-->
+
+
+
+
+<---Start Lesson 109-->
+1-Scroll, ScrollTo, ScrollBy, Focus, Print, Stop
+ 1-if we want to stop the loading we use 
+  window.stop();
+  
+ 2-if we want to print the page we use 
+  window.print();
+  
+ 3-if we want to focus on a window we use
+  window,focus();
+  
+ 4-if we want to make a scroll in the page we make
+  window.scrollTo(x,y);
+  
+ 5-if we want to repeat the scroll we use 
+  window.scrollBy(x,y)
+ 
+ 6-we can use the options 
+  window.scrollTo({
+  	left: 100,
+  	top: 200
+  })
+ 
+Notes...
+1-when we write the scroll unit we don't write PX
+<---End Lesson 109-->
+
+
+
+
+<---Start Lesson 110-->
+1-Scroll To Top Using ScrollY
+<---End Lesson 110-->

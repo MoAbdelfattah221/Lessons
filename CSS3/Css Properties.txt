@@ -1,0 +1,1091 @@
+Css Properties
+--------------
+
+
+The Formal about Css
+
+Selector{
+property: value;
+}
+
+html{
+direction: ltr;
+text-transform: capitalize;
+scroll-behavior: smooth;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/* Comments */
+
+
+<<---Start Colors--->>
+
+color = To Change The Color oF Text.
+
+<<---End Colors--->>
+
+
+
+<<---Start background--->>
+
+background-color = To Change The Color Of Background.
+
+background-image: url("") = To Put an Background Image. 
+
+background-repeat = To Repeat The Image Or Not. 
+
+background-attachment = To Make It Fixed Or Not.
+
+background-position = To Control the Position Of The Background.
+
+background-size = To Control the Size Of The Background.
+
+<<---End background--->>
+
+
+
+<<---Start Padding--->>
+
+The Padding is The internal Margin.
+
+padding: ;
+
+units = px , % .
+
+The Directions Of The Padding Are 
+
+padding-top = The Padding From The Top.
+padding-right = The Padding From The Right.
+padding-bottom = = The Padding From The Bottom.
+padding-left = = The Padding From The Left.
+
+<<---End Padding--->>
+
+
+
+<<---Start Margin--->>
+
+The Margin Is The external Margin.
+
+margin: ;
+
+units = px , n- , % .
+
+The Directions Of The Margin Are 
+
+margin-top = The margin From The Top.
+margin-right = The margin From The Right.
+margin-bottom = = The margin From The Bottom.
+margin-left = = The margin From The Left.
+
+<<---End Margin--->>
+
+
+
+<<---Start Border--->>
+
+The Border Is The Borders Of The Elements
+
+ShortHand Code = (border: 1px red solid).
+
+border-spacing: ; = The Spacing Of The border.
+
+unit = px.
+ 
+border-width: The Size Of The Border.
+border-color: The Color Of The Border.
+border-style: The Style Of The Border.
+
+The Directions Of The Border Are 
+
+Border-top = The Border From The Top.
+Border-right = The Border From The Right.
+Border-bottom = = The Border From The Bottom.
+Border-left = = The Border From The Left.
+
+<<---End Border--->>
+
+
+
+<<---Start Outline--->>
+
+The Outline Is The Borders Of The Borders.
+
+Outline: 1px red solid;
+
+unit = px.
+ 
+Outline-width: The Size Of The Border.
+Outline-color: The Color Of The Border.
+Outline-style: The Style Of The Border.
+
+The Directions Of The Outline Are 
+
+Outline-top = The Border From The Top.
+Outline-right = The Border From The Right.
+Outline-bottom = = The Border From The Bottom.
+Outline-left = = The Border From The Left.
+
+<<---End Outline--->>
+
+
+
+<<---Start Display--->>
+
+Display = Is The Way To Dispaly The Elements.
+ 
+Block
+-Take Full Width If No Width.
+-Add line Break.
+-Respict padding , margin etc..
+
+Inline
+-Don't Add line Break.
+-Don't Respict width , height
+-Respict padding , margin From the Left and The Right Only. 
+-Allow The Elements Before and After it.
+
+Inline-Block
+-Respict padding , margin etc..
+-Allow The Elements Before and After it.
+
+<<---End Display--->>
+
+
+
+<<---Start Dimensions>>
+
+width = To Control IN The Width.
+
+height = To Control IN The Height.
+
+min-width = Minimum Width.
+
+max-width = Maximum Width.
+
+min-height = Minimum Height.
+
+max-height = Maximum Height.
+
+unit = px.
+
+<<---End Dimensions--->>
+
+
+
+<<---Start Overflow--->>
+
+overflow: ; = To Control The Overflow Content
+
+overflow-x: ;(hiddin - scroll - visible - auto)
+overflow-y: ;(hiddin - scroll - visible - auto)
+
+<<---End Overflow--->>
+
+
+
+<<---Start Text--->>
+
+text-align: ;(center - right - left)
+
+vertical-align: ;(top - middle - bottom )
+
+text-decoration: ;(overline - line-through - underline - none) 
+
+text-transform: ;(capitalize - uppercase - lowercase)
+
+text-shadow: ;
+
+ShortHand:
+H-shadow V-shadow Blur Color.
+
+direction: ; = The Direction Of The Page.
+
+letter-spacing: ; = The Space Between The Letters.
+
+word-spacing: ; = The Space Between The Words.
+
+text-indent: ; = The Empty Space Before The Phrases.
+
+line-height: ; = The Space Between X-Phrases.
+
+white-space: ; = (normal - nowrap).
+
+word-break: ; = (break-all - break-word).
+
+text-overflow: ; = (ellipsis) The OverFlow Of The Text.
+
+unit: px.
+
+<<---End Text--->>
+
+
+
+<<---Start inheritance--->>
+
+the Value(inherit) it's Mean Of inheritance Of The Father Element.
+
+<<---End inheritance--->>
+
+
+
+<<---Start Typography--->>
+
+font-family: ; = the Style Of The Font.
+
+google Fonts 
+
+font-size: ; = The Size Of The Font.
+
+units = px , em , % , rem , vw , vh.
+
+font-style: ; = the style of the Font.
+
+font-weight: ; = The Weight Of The Font. 
+
+<<---End Typography--->>
+
+
+
+<<---Start Cursor--->>
+
+cursor: ; (pointer - grap)
+
+<<---End Cursor--->>
+
+
+
+<<---Start Float and clear--->>
+
+float: ;(right - left)
+
+clear: both; = To Clear After Float.
+
+calc: ; = To Calculate Numbers.
+
+<<---End Float and clear--->>
+
+
+
+<<---Start Opacity--->>
+
+opacity: From 1 To 0.1; = Opacity Of The Elements.
+
+<<---End Opacity--->>
+
+
+
+<<---Start Position--->>
+
+position: ;(static - relative - absolute - fixed - sticky)
+
+-static = the defulte Value.
+
+-relative = Moved About itself.
+
+-absolute = Moved About his Father.
+
+-fixed = The Best Case The Buttom To Scroll Top.
+
+-sticky = Scroll From Down We Should Detremin The Height.
+
+<<---End Position--->>
+
+
+
+<<---Start Z-index--->>
+
+z-index: ; = The Way Of Display the Elements.
+
+The Z-index Doesn't Work Without Position.
+ 
+<<---End Z-index--->>
+
+
+
+<<---Start List Styling--->>
+
+list-style: none; = to remove The Bolets, 
+
+list-style-type: ; = The Type Of The Bolets.
+
+list-style-position: ; = The Position Of The Bolets.
+
+list-style-image: ; = to Reblace The  Bolets by Images.
+
+ShortHand Code = (list-style = type position image).
+
+<<---End List Styling--->>
+
+
+
+<<---Start Pseudo Classes--->>
+
+Hover , 
+cheked for Checkbox , 
+visited for links,
+empty for The Empty Elements ,
+foucs for inputs
+
+The Formal of Pseudo Code
+ 
+element:PseudoClasses{
+Codes
+}
+
+<<---End Pseudo Classes--->>
+
+
+
+<<---Start Pseudo Element--->>
+
+.class::first-letter{
+To Control The First Letter.
+}
+
+
+.class::first-line{
+To Control The First Line.
+}
+
+
+::selction{
+TO change The Background Color and the Color When You Select Them.
+}
+
+
+::before{
+content: "";
+}
+
+
+::after{
+content: "";
+}
+
+
+--------------------------
+<<---Start Counter--->>
+
+the lesson 37{
+put (counter-increment: The Name Of The Counter;) in the parent
+ 
+}
+,
+element::after{
+content: counter(The Name Of Counter);
+}
+
+
+<<---End Counter--->>
+--------------------------
+
+--------------------------
+<<---Start Tool Tip--->>
+
+To Display any Element When We Hover On It
+we Put an attribut Which called (data-text = "details")
+in the Element That We Want To Use 
+
+element::before{
+content: attr(data-text);
+display: none;
+}
+
+element:hover::before{
+display: block;
+}
+
+
+<<---End Tool Tip--->>
+--------------------------
+
+<<---End Pseudo Element--->>
+
+
+
+<<---Start Vendor Prefixes--->>
+
+
+{
+-webkit-border-radius: = Chrome,Safari,New Opera Version.
+-moz-border-radius: = Firefox.
+-o-border-radius: = Opera Old Version.
+-ms-border-radius: = Ie,Edge.
+border-radius:
+}
+
+<<---End Vendor Prefixes--->>
+
+
+
+<<---Start Border Radius--->>
+
+border-radius: ;
+
+units: px , %.
+The Directions
+{
+border-top-left-redius:
+border-top-right-redius:
+border-bootom-left-redius:
+border-bootom-right-redius:
+}
+
+<<---End Border Radius--->>
+
+
+
+<<---Start Box Shadow--->>
+
+box-shadow: ;
+
+shortHand: H-Shadow - V-Shadow - Blur - Spread - Color - Inset or Outset.
+
+<<---End Box Shadow--->>
+
+
+
+<<---Start Border Box--->>
+
+box-sizing: border-box;
+
+<<---End Border Box--->>
+
+
+
+<<---Start Transition--->>
+
+The Control in a Spasific Element From A To Z. 
+
+transition-duration: ; 
+
+transition-delay: ;
+
+transition-property: ;
+
+transition-timing-function: ; 
+
+units: s , ms.
+
+ShortHand Code:
+transition: property duration delay timing-function; 
+
+<<---End Transition--->>
+
+
+
+<<---Start Variables--->>
+
+The Goal From Variables To Make The Control More Simple.
+
+The Formal OF Variabels
+
+:root{
+--Variable Name: value;
+}
+
+To Can Control In The Variable We Use var(--Variable Name,fullback Value);
+
+<<---End Variables--->>
+
+
+--------------------------------------------------------------------------------------
+
+<<---Start FlexBox-Parent , Direction , Wrap , Flow--->>
+
+There Are Some Properties Must Give To the Parent Element.
+{
+
+display: flex; = To Start Flexiable Box.
+
+flex-direction:
+ {
+   row; = The direction Of Display is Rows.
+   row-reverse; = The direction Of Display is Reverse Rows.
+   column; = The direction Of Display is Columns.
+   column-reverse; = The direction Of Display is Reverse Columns.
+ }
+ 
+flex-wrap: ; = To Control In The Incrise Content. 
+ {
+   nowrap; = To Don't Wrap The Incrise Content.
+   wrap; =  To Wrap The Incrise Content.
+   wrap-reverse; =  To Wrap The Incrise Content But in reverse Way.
+   ShortHand Code = flex-flow: flex-wrap felx-direction;
+ }
+
+
+{
+
+<<---End FlexBox-Parent , Direction , Wrap , Flow--->>
+
+
+
+<<---Start FlexBox-Parent , Justify Content--->>
+
+To Control In The V-Position Of The Content We Use justify-content.
+
+justify-content: ; 
+{
+ flex-start; = To Start From The Start Point
+ flex-end; = To Start The Incrise Content From The End Point.
+ center; = To Make The Content In the Center.
+ space-between; = To Put A Spaces Between The Elements But Should The Width Not 100%.
+ space-around; = To Put A Spaces Around The Elements But Should The Width Not 100%.
+}
+
+<<---End FlexBox-Parent , Justify Content--->>
+
+
+
+<<---Start FlexBox-Parent , align Items--->>
+
+To Control In The H-Position Of The Content We Use align-items.
+
+align-items: ; 
+{
+ flex-start; = To Start From The Start Point
+ flex-end; = To Start The Incrise Content From The End Point.
+ center; = To Make The Content In the Center.
+}
+
+<<---End FlexBox-Parent , align Items--->>
+
+
+
+<<---Start FlexBox-Parent , Align Content--->>
+
+To Control In The Content We Use align-content.
+
+align-content: ; 
+{
+ flex-start; = To Start Content From The Start Point
+ flex-end; = To Start Content From The End Point.
+ center; = To Make The Content In the Center.
+ space-between; = To Put A Spaces Between The Content.
+ space-around; = To Put A Spaces Around The Content.
+}
+
+<<---End FlexBox-Parent , Align Content--->>
+--------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+<<---Start FlexBox-Child Grow , Shrink , order--->>
+
+To Control In The Growth Of The Elements We Use 
+
+flex-grow: ;
+
+To Control In The Shrink Of The Elements We Use 
+
+flex-shrink: ;
+
+To Control In The Position Of The Elements We Use 
+
+order: ;
+
+<<---End FlexBox-Child Grow , Shrink , order--->>
+
+
+
+<<---Start FlexBox-Child flex-basis , flex Shorthand--->>
+
+To Control In The Size Of the Flex Items Wu Use 
+
+flex-basis: ; 
+
+ShortHand: 
+flex: grow shrink basis;
+
+<<---End FlexBox-Child flex-basis , flex Shorthand--->>
+
+
+
+<<---Start FlexBox-Child align-self , Games , Tasks--->>
+
+To Control In a Spasific Element we Use align-self 
+
+align-self: ; 
+
+<<---End FlexBox-Child align-self , Games , Tasks--->>
+
+--------------------------------------------------------------------------------------
+
+
+
+<<---Start Filters--->>
+
+To Control In The Elements Filters
+
+filter: ;
+{
+grayscal(100%)
+blur(4px)
+}
+
+<<---End Filters--->>
+
+
+
+<<---Start Gradients--->>
+
+To Contol In The Border We Use liner-gradient
+
+background-image: liner-gradient(to Direction , Color Stop1 , Color Stop2);
+
+<<---End Gradients--->>
+
+
+
+<<---Start Pointer Events And Caret Color--->>
+
+To Change The Color Of Caret We Use caret-color
+
+caret-color: ;
+
+To Control IN The Pointer Events We Use Pointer Events 
+
+pointer-event: ;
+
+<<---End Pointer Events And Caret Color--->>
+
+
+
+<<---Start Grid Parent Template Columns--->>
+
+To Start Grid 
+
+display: grid;
+
+To Control The Columns
+
+grid-template-columns = [Number Of Columns In] = [px , % , auto , fr]
+
+If The Elements Have the Same Width We Use Repeat(num of columns , unit)
+
+grid-template-columns: repeat(3 , auto);
+
+fraction = fr.
+
+<<---End Grid Parent Template Columns--->>
+
+
+
+<<---Start Grid Parent Template Rows And Gap--->>
+
+To Control The Height of Rows
+
+grid-template-rows = [Number Of Rows In] = [px , % , auto]
+
+To Control The Gap between Rows And Columns We Use
+
+row-gap: ;
+
+column-gap: ;
+
+Shorthand: 
+gap: row-gap column-gap;
+
+<<---End Grid Parent Template Rows And Gap--->>
+
+
+ 
+<<---Start Grid Parent Justify and Align Content--->>
+
+To Control In The V-Position Of The Content We Use justify-content.
+
+justify-content: ; 
+{
+ flex-start; = To Start From The Start Point
+ flex-end; = To Start The Incrise Content From The End Point.
+ center; = To Make The Content In the Center.
+ space-between; = To Put A Spaces Between The Elements But Should The Width Not 100%.
+ space-around; = To Put A Spaces Around The Elements But Should The Width Not 100%.
+}
+
+To Control In The Content We Use align-content.
+
+align-content: ; 
+{
+ flex-start; = To Start Content From The Start Point
+ flex-end; = To Start Content From The End Point.
+ center; = To Make The Content In the Center.
+ space-between; = To Put A Spaces Between The Content.
+ space-around; = To Put A Spaces Around The Content.
+}
+
+<<---End Grid Parent Justify and Align Content--->>
+
+
+
+<<---Start Grid Parent - Full layout With Grid Template Areas--->>
+
+         (-The Lesson Number 60-)
+
+to Control In The Page We Use grid-template-areas
+
+grid-template-areas: 
+ "logo logo nav nav nav nav nav nav nav nav"
+ "cont cont cont cont cont cont cont cont side side"
+ "foot foot foot foot foot foot foot foot foot foot";
+ 
+grid-template-columns: repeat(10 , 1fr);
+
+grid-template-rows: 50px auto 50px; 
+
+h2{
+grid-area: logo;
+}
+
+nav{
+grid-area: nav;
+}
+
+section{
+grid-area: cont;
+}
+
+aside{
+grid-area: side;
+}
+
+footer{
+grid-area: foot;
+}
+
+<<---End Grid Parent - Full layout With Grid Template Areas--->>
+
+
+
+<<---Start Grid Child Columns And Rows--->>
+
+To Control in The Size Of The Elements We Use grid-column
+
+grid-column: start point / end point + 1;
+
+grid-row: start point / end point + 1;
+
+OR 
+
+grid-column: span + end point;
+
+grid-row: span + end point;
+
+<<---End Grid Child Columns And Rows--->>
+
+
+
+<<---Start Grid Child Grid Area And Trinings--->>
+
+To Control IN The Grid Items We Use 
+
+{
+grid-row-start: ;
+grid-column-start: ;
+grid-row-end: ;
+grid-column-end: ;
+}
+
+Shorthand 
+grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;
+
+<<---End Grid Child Grid Area And Trinings--->>
+
+
+
+<<---Start 2D Transform Scale--->>
+
+To Control In the 2D Dimention We Use Transform: Scale();
+
+For X-Axis
+
+Transform: scaleX();
+
+For Y-Axis
+
+Transform: scaleY();
+
+Shorthand: 
+
+Transform: scale(X , Y);
+
+<<---End 2D Transform Scale--->>
+
+
+
+<<---Start 2D Transform Rotate--->>
+
+To Control In The Rotate Of Elements We Use transform: rotate()
+
+transform: rotate();
+
+unit: deg , red , grad , turn.
+
+<<---End 2D Transform Rotate--->>
+
+
+
+<<---Start 2D Transform Translate--->>
+
+To Control IN The Moveing Of Elements We Use transform: translate();
+
+transform: translate(X , Y)
+
+<<---End 2D Transform Translate--->>
+
+
+
+<<---Start 2D Transform Skew--->>
+
+To Control IN The Deviation Of Elements We Use transform: skew();
+
+For X-Axis
+
+transform: skewX();
+
+For Y-Axis
+
+transform: skewY();
+
+Shorthand: 
+transform: skew(X , Y);
+
+unit: deg; 
+
+<<---End 2D Transform Skew--->>
+
+
+
+<<---Start 2D Transform Matrix--->>
+
+The Matrix is a ShortHand Code 
+
+transform: matrix( scaleX() , skewY() , skewX() , scaleY() , translateX() , translateY() );
+
+<<---End 2D Transform Matrix--->>
+
+
+
+<<---Start 2D transform-origin--->>
+
+           (Lesson-70)
+
+<<---End 2D transform-origin--->>
+
+
+
+<<---Start 3D Transform Rotate--->>
+
+           (Lesson-71)
+
+<<---End 3D Transform Rotate--->>
+
+
+
+<<---Start 3D Transform - translate perspective + origin--->>
+
+           (Lesson-72)
+
+<<---End 3D Transform - translate perspective + origin--->>
+
+
+
+<<---Start 3D Transform - Backface Visibilityn and Flip Product--->>
+
+           (Lesson-73)
+
+<<---End 3D Transform - Backface Visibilityn and Flip Product--->>
+
+
+
+<<---Start Animation Keyframes , Name , Duration--->>
+
+Formila 
+
+@keyframes animation name{
+
+0%{
+color: white;
+}
+
+50%{
+color: green;
+}
+
+100%{
+color: white;
+}
+
+}
+
+We Should give the Element Which Will Be Animated 
+
+animation-name: ;
+
+animation-duration: ;
+
+<<---End Animation Keyframes , Name , Duration--->>
+
+
+
+<<---Start Animation-iteration Count , Timing Function--->>
+
+         (Lesson 75)
+
+To Control In The Number Of The Animation We Use 
+
+animation-iteration-count: ;
+
+To Control In The Way Of Displaying the Animation We Use 
+
+animation-timing-function: ;
+
+<<---End Animation -iteration Count , Timing Function--->>
+
+
+
+<<---Start Animation-Direction , Delay , Fill Mode , Play State--->>
+
+To Control In The Direction Of The Animation We Use 
+
+animation-direction: ;
+
+To Control In The Delay Of The Animation We Use 
+
+animation-delay: ;
+
+To Make The Last KeyFrame Static We Use
+
+animation-fill-mode: forwarde;
+
+To Contol in the Way Of Animation We Use
+
+animation-play-state: ;
+
+ShortHand: 
+animation: animation-name animation-duration animation-timing-function animation-iteration-count;
+
+<<---End Animation-Direction , Delay , Fill Mode , Play State--->>
+
+
+
+<<---Start Selectors Referance Part 1--->>
+
+* = All The Elements.
+
+Element = {h2,p,div}.
+
+Elements Inside Other Element = div p. 
+
+.ClassName.
+
+#Id.
+
+Class Inside Class = .parent .Child.
+
+Element With 2 Classes (WithoutSpace)= .parent.child.
+
+Element Inside Class = .Parent div.
+
+Grouping = p,div.
+
+Element.ClassName = a Class For Spacifc Element.
+
+Direct Child = .Parent > .Child. 
+
+<<---End Selectors Referance Part 1--->>
+
+
+
+<<---Start Selectors Referance Part 2--->>
+
+Next Element = Element + Element. 
+
+Prathers In the Same Parent = Element ~ Elements.
+
+[Attribute] = All The Elements Which Have the Same Attribute.
+
+Element[Attribute] = The Element Which have this Attribute.
+
+[Attribute="Value"] = All The Atrribute Which Have a Spacific Value.
+
+Element[Attribute="value"] = The Element Which have a Spacific Value.
+
+[Attribute~="Vlaue"] = A Spacific Word in The Attribute.
+
+[Attribute*="Value"] = A String in The Attribute.
+
+[Attribute^="Vlaue"] = A First Value in The Attribute.
+
+<<---Start Selectors Referance Part 2--->>
+
+
+
+<<---Start Selectors Referance Part 3--->>
+
+:first-child = The First Child.
+
+:last-child = The Last Child.
+
+:first-of-type = The First of His Type.
+
+:last-of-type = The Last of His Type.
+
+:only-child = the ONly Child In hos Parent.
+
+<<---Start Selectors Referance Part 3--->>
+
+
+
+<<---Start Selectors Referance Part 4--->>
+
+:not(Selector) = All The Elements Not a Spacific Selector.
+
+:nth-child(2) = The Second Child in His Parent.
+
+:nth-last-child() = To Counting From the Last.
+
+p:nth-of-type(3) = The Third Paregraph in His Parent
+
+p:nth-first-of-type(1) = The First Pargraph in his Parent.
+
+p:nth-last-of-type(1) = The Last Pargraph in his Parent.
+
+<<---End Selectors Referance Part 4--->>
+
+
+
+<<---End Selectors Referance Part 5--->>
+
+:root
+
+:checked
+
+:empty
+
+:disabeld
+
+:required
+
+:hover
+
+:foucs
+
+::before
+
+::after
+
+::selction
+
+::placeholder
+
+<<---End Selectors Referance Part 5--->>
+
+
+
+

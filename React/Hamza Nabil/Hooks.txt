@@ -1,0 +1,229 @@
+<--- Start Lesson 10--->
+1-If we want to make a functional component we write rfc.
+2-If we want to access the props we pass it to the functional component // function TestHook(props)
+ as a parameter then we can access it
+ Example
+ ---------
+ {props.x}
+ 
+3-If we want to using state in Hook we import useState from react.
+4-Then we make that // const [propertyName , propertyfunctionName] = useState("Value")
+5-If we want to access the state // { propertyName }
+6-If we want to make a function inside the state we make 
+ const changeValue = () => {
+   setProduct("TheNewValue")
+ }
+ <button onClick={changeValue} >change</button>
+
+ Another Way
+  <button onClick={() => setProduct("Mouse")} >change</button>
+
+
+7-If we have an array of objects and we want to add to it a new object and also in the same time save the others objects we make
+Example
+----------
+import React , {useState} from 'react'
+
+export default function TestHook(props) {
+    const [products , setProducts] = useState([
+        {id: 1, name: "Product1"},
+        {id: 2, name: "Product2"},
+    ]);
+
+    const addObject = () => {
+        setProducts([...products , {id: 3 , name: "Product3"}])
+    }
+    return (
+        <div>
+            <button onClick={addObject}>Add</button>
+            {products.map((product) => <div>{product.id}</div>)}
+            {products.map((product) => <div>{product.name}</div>)}
+        </div>
+    )
+}
+
+8-We have an alternative hook for the CDM and CDU which called useEffect
+ useEffect syntax 
+ -------------------
+ useEffect(()=> {
+ 	// Code Here
+ }, [propertyName]);
+
+
+Note..
+1-We don't write this is Hooks
+2-We write the state before the return function
+3-We can add more than state in the same component
+4-CDM running just for one time after the component rendered
+5-CDU running with any update in the props or the state
+6-Once me make any render the component or rerender in the state or props useEffect will running 
+7-useEffect takes 2 parameters the first arrow function , the second the property that I want the useEffect work on it
+8-If I didn't give the useEffect the second parameters which will work if there any update.
+9-We can send requests inside the useEffect Hook.
+<--- End Lesson 10--->
+
+
+
+<--- Start Lesson 11--->
+1- This lesson is about how to get data from API
+
+Project Code
+--------------
+import React , {useState , useEffect} from 'react'
+import axios from 'axios';
+
+function CompA() {
+    const [post , setPost] = useState({});
+    const [id , setId] = useState(1);
+    
+    useEffect(()=>{
+        axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+        .then((res) => {
+            setPost(res.data);
+        })
+    }, [id])
+
+    return (
+        <div>
+            <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
+            {post.body}
+        </div>
+    )
+}
+export default CompA;
+<--- End Lesson 11--->
+
+
+
+<--- Start Lesson 12--->
+1- We have 2 ways to use the context
+ 1-The First
+   1- useContext helps us to access the component that we want without making props drilling.
+   2- useContext rap the app componenet.
+   3- If we want to use it we import createContext from react
+   4- make a variable it's value = createContext(); // const ProductContext = createContext();
+   5- rap everything inside it + write the Provider with it // <ProductContext.Provider> AllTheElements </ProductContext.Provider>
+   6- Give to the Product.Provider prop which called value={}
+   7- export the variable which we created.
+   8- going to the component that I want to access the data inside it and import the variable
+   9- rap inside the div <Product.Consumer></Product.Consumer>
+   10- make a curly braces {} and write inside it an arrow function 
+   11- give to the arrow function a parameter which = data that Provider takes as a value prop
+
+
+ 2-The Sceond
+  1- Make everything we made in the firstWay exapt the Consumer step and eveything after it 
+  2- If we want touse this way import useContext from react
+  3- make a variable  // this variable equl the value which we have from the ProductContext // const value = useContext(ProductContext) 
+  4- access it inside the component {value}
+  
+<--- End Lesson 12--->
+
+
+
+<--- Start Lesson 13--->
+1-If we want to catch an element then we need to useRef to can catch it.
+2-Firstly import useRef from react 
+3-Then make a variable that vallue = useRef();
+4-Going to the element that you want to catch and add an property to it which called ref-{variableName}
+5-Then catch the variable.current and make anything we want.
+
+
+Notes
+1-useRef doesn't make rerender.
+<--- End Lesson 13--->
+
+
+
+<--- Start Lesson 14--->
+1- useReducer
+2-Reducer is a fundtion takes the state and the action as an arguments and return the new state
+3-Action is a JS object talking to reducer function
+4-Dispatch is a function gice the access to the action to talking to the reducer fundtion
+
+5-Example
+-----------
+import React, { useReducer } from 'react'
+
+const initState = {
+  users: [],
+}
+
+const reducer = (state , action) => {
+  switch(action.type){
+    case "Add_User": 
+      return {users: [...state.users , "Mohamed"]};
+    
+    case "Remove_Users": 
+      return {users: []};
+
+    default: 
+      return state;
+  }
+}
+
+function App() {
+  const [state , dispatch] = useReducer(reducer , initState);
+  console.log(state);
+  return (
+      <div className='App'>
+        {state.users.length ? state.users.map((user) => <div>{user}</div>)  : "There is no users"}
+        <button onClick={() => dispatch({type: "Add_User"})}>Add</button>
+        <button onClick={() => dispatch({type: "Remove_Users"})}>Remove</button>
+        {}
+      </div>
+  )
+};
+export default App;
+
+<--- End Lesson 14--->
+
+
+
+<--- Start Lesson 15--->
+1-useLayoutEffect.
+2-useLayoutEffect is look like useEffect but the diffrence in the render time
+
+3-useLayoutEffect Syntax
+ ------------------------------
+  useLayoutEffect(() => {
+    // Code Here
+  })
+<--- End Lesson 15--->
+
+
+
+<--- Start Lesson 16--->
+1-If we want to make a custom hook we make
+ 1-Create a new file to put inside it our logic
+ 2-make a function in this file
+ 3-export the function
+ 4-import it inside the file that I want to use in
+ 5-declare a variable // const variableName = [theThingsThatIReturnedfromTheHookFile] = HookName
+ 
+ <--- End Lesson 16--->
+
+
+
+<--- Start Lesson 17--->
+1-Updates for React-Router-Dom v-6
+2-Outlet
+<--- End Lesson 17--->
+
+
+
+<--- Start Lesson 18--->
+1-
+<--- End Lesson 18--->
+
+
+
+<--- Start Lesson 19--->
+1-
+<--- End Lesson 19--->
+
+
+
+<--- Start Lesson 20--->
+1-
+<--- End Lesson 20--->

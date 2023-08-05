@@ -1,0 +1,264 @@
+<---Start Lesson 23-->
+1-Number
+ 1-Double Precision
+  1-The way of store the numbers in js
+  
+ 2-Syntactic Sugar
+  1-The way to make the code more easy to understand
+  	without = console.log(1000000);
+  	with = console.log(1_000_000);
+  
+ 3-e
+  1-It's mean the number of zeros
+   EX-
+    console.log(1e6);
+    the result will be 1000000.
+  
+ 4-**
+  1-consle.log(10 ** 6);
+  
+ 5-With Decimal
+  1-console.log(1000000.00)
+  
+ 6-Number + BigInt
+  1-The biggest safe value of numbers you can use in JS
+   console.log(Number.MAX_SAFE_VALUE);
+  
+ 7-Number Max Value
+  1-The biggest value of numbers you can use in JS
+   console.log(MAX_VALue);
+   
+ 8-Number Min Value
+  1-The smallest value of numbers you can use in JS
+   console.log(MIN_VALue);
+   
+<---End Lesson 23--->
+
+
+
+
+<---Start Lesson 24-->
+1-Number Methods
+ 1-toString()
+  To Convert a number into a string
+   console.log(100..tostring());
+   OR
+   console.log((100).toString);
+   
+ 2-toFixed()
+  To Convert a number  into a string with a specific Numbers after the DOT
+   console.log(100.100.toFixed(2)) // 100.10
+   OR
+   console.log((100.100).toFixed(2));
+   
+ 3-parseInt()
+  To convert a string into an integer number
+   console.log(parsInt("100"));
+   
+ 4-parsFloat()
+ To convert a string into a float number
+   console.log(parsFloat("100"));
+
+ 5-isInteger() [ES6]
+  To check if the number is integer or not
+   console.log(Number.isInteger(100));
+   
+ 6-isNAN() [ES6]
+  To check if this not a number or not
+   console.log(Number.isNAN(100));
+ 
+Notes..
+1-To call a method write TWO DOTS..
+
+<---End Lesson 24--->
+
+
+
+
+<---Start Lesson 25-->
+1-Math Object
+ 1-round()
+  Make the number bigger if it 0.5 or bigger , if the number smaller than 0.4 don't make it near
+    EX
+     9.5 = 10
+     9.2 = 9
+      console.log(Math.round(NUM));
+   
+ 2-ceil()
+  Make the number nearest 
+   EX
+    9.5 = 10
+    9.2 = 10
+     console.log(Math.ceil(NUM));
+     
+ 3-floor()
+  Make the number farest
+   EX
+    9.5 = 9
+    9.2 = 9
+     console.log(Math.floor(NUM));
+     
+ 4-min()
+  Find the minimum number 
+   console.log(Math.min(1,2,3,4,5,6,7,8,9)); // 1
+   
+ 5-max()
+  Find the maximum number 
+   console.log(Math.max(1,2,3,4,5,6,7,8,9)); // 9
+ 
+ 6-pow()
+  To know the power of a specific number 
+   console.log(Math.pow(2,2)); // 4
+   
+ 7-random()
+  To find a random number
+   console.log(Math.random()); // random number
+   
+ 8-trunc() [ES6]
+  Return the number without any Decimal numbers 
+   console.log(Math.trunc(4.6)); // 4
+   
+<---End Lesson 25--->
+
+
+
+
+<---Start Lesson 26-->
+1-Number Challenge
+<---End Lesson 26--->
+
+
+
+
+<---Start Lesson 27-->
+1-String Methods Part 1
+ 1-Access With Index
+  let name = "Mohamed";
+   To know the Number of index of "e"
+    console.log(name[5]);
+ 
+ 2-Access With charAt()
+  To know the Character of the a Specific index position
+   let name = "Mohamed";
+    console.log(name.charAt(5));
+
+ 3-length
+  To know the numbers of the characters of a specific variable
+   let name = "Mohamed";
+    console.log(name.length);
+
+ 4-trim()
+  Don't count the spaces in the start and the end
+   let name = "Mohamed";   
+    console.log(name.trim());
+
+ 5-toUpperCase()
+  Convert the strings into Uppercase
+   let name = "Mohamed";
+    console.log(name.toUpperCase());
+
+ 6-toLowerCase()
+  Convert the strings into Lowercase
+   let name = "Mohamed";
+    console.log(name.toLowerCase());
+ 
+ 7-Chain Methods
+  Example 
+ 
+Notes..
+1-The Length = the number of indexes + 1.
+
+<---End Lesson 27--->
+
+
+
+
+<---Start Lesson 28--->
+1-String Methods Part 2
+ 1-indexOf(Value [Mand] , Start [Opt] 0)
+  When we want to know The position of a specific character
+   name = mohamed;
+    console.log(name.indexOf("m")); //0
+     if it's didn't find the input field it return -1
+
+
+ 2-lastIndexOf(Value [Mand] , Start [Opt] Length)
+    When we want to know The Last position of a specific character
+     name = mohamed;
+      console.log(name.lastIndexOf("m")); //2
+
+
+ 3-slice(Value [Mand] , End [Opt] Not Include End)
+  To cut a specific characters 
+   name = "mohamed";
+    console.log(name.slice(0 , 4)); // moha
+     if we want to count from the right we put a negative Value
+      EX
+       console.log(name.slice(-2));
+
+
+ 4-Repeat(Times) [ES6]
+  To repeat a specific thing
+   name = "mohamed";
+    console.log(name.repeat(4));
+
+
+ 5-split(Separator [Opt] , Limit [Opt])
+    Split the value and return an array
+     console.log(name.split(" "));
+      if the value = "";
+       it will spilt all the characters
+      if the value = " ";
+       it will spilt all the white spaces
+      if we want to split a specific character
+       the value = "The specific Character";
+
+      not it's spilt when there a white space
+     
+<---End Lesson 28--->
+
+
+
+
+<---Start Lesson 29-->
+1-String Methods Part 3
+ 1-substring(start [Mand] , End [Opt] Not Including End)
+  it's Lookalike Slice Method
+    if start > End Will Swap
+    if Start < 0 it's Start From 0
+    Use length to get Last Characters  
+     let name = "Mohamed";
+      console.log(name.substring(0,3)); // Moh
+
+
+ 2-substr(Start [Mand] , Characters To Extract)
+  Here We Determine The Numbers of characters which we need
+   Start >= Length = ""
+   Negative Start From The End
+
+
+ 3-includes(Value [Mand] , Start [Opt] Default 0)[ES6]
+    it's Return True Or False
+     We here asking if the variable contain a specific character or not 
+      let name = "Mohamed";       
+ 	console.log(name.include("m"));
+
+ 4-startsWith(Value [Mand] , Start [Opt] Default 0)[ES6]
+    it's Return True Or False
+     We here asking if the variable start with a specific character or not
+      let name = "Mohamed"
+       console.log(name.startsWith("m"));
+
+ 5-endsWith(Value [Mand] , Length [Opt] Default Full Length)[ES6]
+    it's Return True Or False
+      here asking if the variable End with a specific character or not
+       let name = "Mohamed" 
+        console.log(name.startsWith("m"));
+
+<---End Lesson 29--->
+
+
+
+<---Start Lesson 30-->
+1-String Challenge
+<---End Lesson 30--->

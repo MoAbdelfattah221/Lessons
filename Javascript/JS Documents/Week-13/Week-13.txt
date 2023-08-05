@@ -1,0 +1,148 @@
+<---Start Lesson 94-->
+1-Event Simulation – Click, Focus, Blur
+ 1-to make a simulation events 
+ 
+EX
+---
+let two = document.querySelector(".two");
+window.onload = function () {
+  two.focus();
+}
+
+let one= document.querySelector(".one");
+one.blur = function (){
+document.links[0].click();
+}
+<---End Lesson 94--->
+
+
+
+
+<---Start Lesson 95-->
+1-ClassList Object And Methods
+ 1-if we want to show the class list we use 
+  element.classList;
+  
+ 2-if we want to check if we have a specific class we use
+ element.classList.contains("theClassName");
+ 
+ 3-to know the name of the class we use
+  element.classList.item("theIndexOfTheClass")
+  
+ 4-to add a classes to te element we use 
+  element.classList.add("theNewClassName")
+  
+ 5-to remove a classes to te element we use 
+  element.classList.remove("theNewClassName")
+
+ 6-if we want to add or remove a specific class we use
+  element.classList.toggle("theClassName");
+  
+Notes...
+1-when we using toggle if we have the className toggle will removes it if we haven't toggle will adds it
+<---End Lesson 95-->
+
+
+
+
+<---Start Lesson 96-->
+1-CSS Styling And Stylesheet
+ 1-if we want to style a specific element we do
+  element = document.getElementById("ele");
+  element.style.color = "red";
+  
+ 2-if we want to add more than one style on one element we do 
+  element.style.cssText: "font-size: 30px;  color: red";
+  
+ 3-we can remove a property by using 
+  element.style.removeProperty("color")
+ 
+ 4-we can set a property by using 
+  element.style.setProperty("color" , "value" , "important if we need it")
+  
+ 5-we can do this all changes from styleSheet by making
+  document.styleSheets[0].rules[0].style.property
+<---End Lesson 96-->
+
+
+
+
+<---Start Lesson 97-->
+1-Before, After, Prepend, Append, Remove
+ 1-if we want to add an elements before the main element we use
+  element.before("");
+  
+ 2-if we want to add an elements before the main element we use
+  element.after("");
+
+ 
+ 3-if we want to add a new elements in the after of the main element we use
+  element.append("")
+ 
+ 4-if we want to add a new elements in the before of the main element we use
+  element.prepend("")
+
+ 
+ 5-if we want to delete a specific element we use 
+  element.remove();
+ 
+<---End Lesson 97-->
+
+
+
+
+<---Start Lesson 98-->
+1-DOM Traversing
+ 1-to get the next thing  for an element we make 
+  span.nextSibling
+  
+ 2-to get the before thing  for an element we make 
+  span.previousSibling
+ 
+ 3-to get the next element  for an element we make 
+  span.nextElementSibling
+
+ 4-to get the after element  for an element we make 
+  span.previousElementSibling
+
+5-to get the parent element we make 
+ span.parentElement
+ 
+<---End Lesson 98-->
+
+
+
+
+<---Start Lesson 99-->
+1-DOM Cloning
+ 1-if we want to copy an element and paste it in a different element we make 
+  let p = document.querySelector("p").cloneNode(Boolen);
+  
+Notes...
+1-if we write false in the value it will take the element without the inside textAndElements.
+2-if we write true it will take all the elements and the attributes
+<---End Lesson 99-->
+
+
+
+
+<---Start Lesson 100-->
+1-AddEventListener
+ 1-if we want to make an event we use addEventListenener
+  addEventListener Syntax
+   let p = document.getElementById("p");
+   p.addEventListener("Evenet" , function () {
+   	// Code Here
+   })
+   
+   
+ Notes...
+ 1-we can make more than on event by addEventListener.
+<---End Lesson 100-->
+ 
+
+
+
+<---Start Lesson 101-->
+1-DOM Challenge
+<---End Lesson 101-->

@@ -1,0 +1,160 @@
+<---Start Lesson 1--->
+1-Introduction And What Is JavaScript ? 
+  DOM = document Object Model
+  BOM = Browser Object Model
+  OOP = Object Oriented Programming 
+  ES6 , ES7 = ECMAScript
+<---End Lesson 1--->
+
+
+
+
+<---Start Lesson 2--->
+1-How To Study?
+ Focus
+ Ask How To Fix Not Fix
+ Start an idea
+ Check Lessons Code
+ Do The Assignments
+ Problem Solving
+<---End Lesson 2--->
+
+
+
+
+<---Start Lesson 3--->
+1-Setting Up Your Environment And Tools
+ Download Some Extensions
+  1-Live Server
+  2-Bracket Pair
+  3-ESLint
+  4-Indent-Rainbow
+  5-Material Icons Theme
+  6-Path Intellisense
+  7-Prettier
+<---End Lesson 3--->
+
+
+
+<---Start Lesson 4--->
+1-Work With Chrome Developer Tools
+ 
+ 1-To Create an Element.
+   1-Open Console
+   2-document.write("<h2>Hello</h2>");
+   
+ 2-To choose The Element and Change his Color.
+   1-Open Console
+   2-document.querySelector("h2").style.color = "#fff";
+ 
+ 3-To choose The element and change his font size.
+   1-Open Console
+   2-document.querySelector("h2").style.fontSize = "40px";
+ 
+ 4-To Close The Window.
+   1-Open Console
+   2-window.close();
+
+ 5-To Clear The Console.
+   1-Open Console
+   2-console.clear();
+
+<---End Lesson 4--->
+
+
+
+
+<---Start Lesson 5--->
+
+1-Where To Put The Code
+  The JavaScript File Should Be in The End Of The Page 
+  Before Body Elements.
+  
+2-When We Want To Put The Script Element In The Head
+   We Use This Function.
+    window.onload = function(){
+     The Code Here
+    };
+<---End Lesson 5--->
+
+
+
+
+<---Start Lesson 6--->
+1-Comments And Bad Practice.
+
+ 1-Single Comment.
+  To Make Single Comment We Use //
+  
+ 2-Multiple Comment.
+  To Make Multiple Comments We Use /* */
+ 
+ 3-Auto Comment.
+  To Make Auto Comments We Press.
+  Ctrl + /
+<---End Lesson 6--->
+
+
+
+
+<---Start Lesson 7--->
+1-OutPut To Screen.
+
+ 1-window.alert().
+  1-To Write a Message For The User
+   window.alert("The Message");
+   
+ 2-document.write("").
+  1-To Write an Element In The Html Page
+   document.write("The Element And The Content");
+   
+ 3-console.log("").
+  1-To Write any Thing in The Console We Use
+   Consle.log("The Message");
+  
+ 4-document.creatElement("").
+  To Create an Element in The Html page We Use
+   document.creatElement("The Element");
+<---End Lesson 7--->
+
+
+
+<---Start Lesson 8--->
+1-Console methods And Styling And Web API.
+ 1-consle.error("")
+  To Write a Error For The User We Use 
+   console.error("The Message");
+   
+ 2-console.table([""])
+  To Write a Table For The Names Of The Users We Use
+   console.table(["Mohamed" , "Waleed" , "Nabil"]) 
+   
+ 3-consle.log("")
+  To Style a Message in The Console We Use
+   console.log("%cThe Message" , "color: red; font-size: 20px;");
+
+2-APi
+ API = Application Programming Interface.
+<---End Lesson 8--->
+
+
+
+
+<---Start Lesson 9--->
+1-What Is ECMAScript?
+ 1-ECMAScript Means The Standardization Of Information And
+ Communication Systems.
+ 
+ 2-What Is 6th or 7th?
+ This Is The Number Of The Edition.
+ 
+2-To Print a Value Of a Variable in JavaScript
+ We Do
+ var myName = "Mohamed";
+ console.log("Hello "+ myName);
+ 
+3-To Print a Value Of a Variable in ES6
+ We Do 
+ let myName = "Mohamed";
+ console.log(`Hello ${myName}`);
+<---End Lesson 9--->

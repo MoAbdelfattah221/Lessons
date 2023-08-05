@@ -1,0 +1,63 @@
+<---Start Lesson 18-->
+1-Arithmetic Operators
+ 1-  +  Addition
+ 2-  -  Subtraction
+ 3-  *  Multiplication
+ 4-  /  Division
+ 5- **  Exponentiation
+ 6-  %  Modulus
+ 7- ++  Increment [Post - Pre]
+ 8- --  Decrement [Post - Pre]
+ 
+2-Notes..
+ 1-We Can't Collect a Number With a String. 
+ 2-If We Try To Subtract a Number From a String The Result Will be NAN (Not a Number).
+ 3-The Type of NAN is Number.
+
+<---End Lesson 18--->
+
+
+
+
+<---Start Lesson 19-->
+1-Unary Plus And Negation Operators
+ 1- + Unary Plus [Return Number if it's not a number] 
+ 2- - Unary Negation [Return Number if it's not a number + Negation it]
+
+2-Notes..
+ 1-There is a Constructor Called Number it's Convert The String Into A Number
+  console.log(Number("100"));
+
+<---End Lesson 19--->
+
+
+
+
+<---Start Lesson 20-->
+1-Type Coercion (Type Casting)
+ 1-If We Want to Collect a number with String We Use Unary plus
+  var a = "10";
+  var b = 10;
+  console.log(+a + b);
+ 
+<---End Lesson 20--->
+
+
+
+
+
+<---Start Lesson 21-->
+1-Assignment Operators
+ 1-If We Want To Update an old Value We Use
+  let a = 10; 
+  a = a + 10;
+  a+=10;
+
+<---End Lesson 21--->
+
+
+
+
+<---Start Lesson 22-->
+1-Operators Challenges
+<---End Lesson 22--->

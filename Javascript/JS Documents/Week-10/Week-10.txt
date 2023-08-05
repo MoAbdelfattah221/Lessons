@@ -1,0 +1,172 @@
+ <---Start Lesson 71-->
+1-Higher Order Functions – Map
+ 1-Higher Order Function this is the method  which accepts functions as a parameters and/or return a function
+ 2-and the second function which is accepted by the higher order function accepts 3 parameters [element , index , array].
+ 
+ 
+ EX
+ ---
+ let myNums = [1,2,3,4,5,6];
+ let newArray = [];
+ 
+ for(let i = 0; i < myNums.length; i++){
+   newArray.push(myNums[i] + myNums[i]);
+ }
+ console.log(newArray)
+ 
+ 
+ Map-EX
+ ---------
+ let addSelf = myNums.map(function(element , index , array ){
+   return element + element;
+ }, 10)
+console.log(addSelf);
+ 
+ 
+ Arrow-Map-EX
+ ---------
+ let addSelf = myNums.map((element) => element + element);
+console.log(addSelf); 
+
+ 
+We can make a function and take the result as  a parameter for the map function
+EX
+---
+function addition (element){
+  return element + element;
+}
+
+let add = myNums.map(addition)
+console.log(add);
+
+
+Notes...
+1-the map method creates a new array and return the new array.
+2-the element = the current element in the array.  
+3-the index = the current index in the array.
+4-we can replace 10 by this.
+5-the element is mandatory.
+6-the index and the array are Optional.
+<---End Lesson 71--->
+
+
+
+
+ <---Start Lesson 72-->
+1-Higher Order Functions – Map Practice
+ 1-to convert a string to an array we use .spilt("")
+<---End Lesson 72--->
+
+
+
+
+ <---Start Lesson 73-->
+1-Higher Order Functions – Filter
+ 1-The same idea of the map but the difference is that the filter returns the true value only in the new array.  
+ let friend = ["ahmed" , "mohamed" , "abdalla"];
+ 
+ 1-Filter-EX
+ -------------
+ let filterFriend = friend.filter(function(el){
+ return ele.startWith("a");
+ });
+ console.log(filterFriend);
+<---End Lesson 73--->
+
+
+
+2-Filter-EX
+-------------
+let numbers = [11,20,2,5,17,10];
+
+let even = numbers.filter(function(ele){
+return ele % ele === 0;
+})
+console.log(even);
+  
+ <---Start Lesson 74-->
+1-Higher Order Functions – Filter Practice
+<---End Lesson 74--->
+
+
+
+
+ <---Start Lesson 75-->
+1-Higher Order Functions – Reduce
+ 1-the reduce method take 2 parameters (callBackFunction , initialValue)
+ 2-the callBackFunction Take 4 Parameters (Accumulator , current Value , Current index , Array);
+ 
+ Reduce-EX
+ ------------
+let num = [10 , 20 , 30 , 40 , 50];
+let add = num.reduce(function(acc , ele , index ,array){
+    return acc + ele;
+});
+console.log(add);
+ 
+ 
+ 
+
+
+Notes...
+1-The Reduce method returns one value only.
+2-the initial value is the value which the accumulator will begin from.
+3-Accumulator => the Accumulated value previously returned in the last invocation. 
+4-Current Value =>The current element begin processed in the array
+5-Current Index => The current index of the current element.
+6-Array => The Current Array.
+7-The index and the array are Optional.
+<---End Lesson 75--->
+
+
+
+
+ <---Start Lesson 76-->
+1-Higher Order Functions – Reduce Practice
+<---End Lesson 76--->
+
+
+
+
+ <---Start Lesson 77-->
+1-Higher Order Functions – ForEach & Practice
+
+ 1-forEach Syntax.
+ forEach(function(Element , Index , Array){
+ 	// Code Here
+ } , This Argument);
+ 
+ 
+ 1-ForEach EX
+ ---------------
+ 
+ let allLis = document.querySelectorAll("ul li");
+ allLis.forEach(function(ele){
+   ele.onclick = function(){
+   	// remove Active Class.
+   	allLis.forEach(function(ele){
+   		ele.classList.remove("active");
+   	})
+   	// Add Active Class.
+   	this.classList.add("active");
+   	 let allDivs = document.quarrySelectorAll(".content div");
+	 allDivs.forEach(function(ele){
+ 	ele.style.display = "none";
+ })
+
+   }
+ })
+
+
+Notes...
+1-forEach doesn't make a new array.
+2-forEach return Undefined.
+3- We don't but the forEach method in a Variable.
+<---End Lesson 77--->
+ <---Start Lesson 78-->
+1-Higher Order Functions – Challenge
+
+
+Notes...
+1-To make a flat array we use flat Method.
+<---End Lesson 78--->

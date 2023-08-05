@@ -1,0 +1,99 @@
+ <---Start Lesson 64-->
+1-Anonymous Function And Practice
+ 1-The Anonymous Function is the function without a name. 
+ 
+EX
+---
+document.getElementById("show").onclick = function(){
+  console.log(`Show Button`);
+}
+ 
+2-setTimeout
+ it's make a specific task after a specific time 
+
+Notes...
+1-If we store the function in a variable we don't need to give name to the function.
+2-We can access the function before the declaration.
+3-We use the Anonymous Function when we want to use it for one time only .
+<---End Lesson 64--->
+
+
+
+
+ <---Start Lesson 65-->
+1-Return Nested Function
+ 1-EX
+ -----
+ function sayHello (fName , lName){
+   let message = "Hello";
+   function concat(){
+   	message = '${message } ${fName} ${lName}`
+   }
+   concat();
+   
+   return message ;
+ }
+ console.log(sayHello("Mohamed" , "Waleed"));
+ 
+ 
+ 
+ 2-EX
+ -----
+  function sayHello (fName , lName){
+   let message = "Hello";
+   function concat(){
+   	return '${message } ${fName} ${lName}`
+   }   
+   return concat() ;
+ }
+ console.log(sayHello("Mohamed" , "Waleed"));
+
+ 
+<---End Lesson 65--->
+
+
+
+
+ <---Start Lesson 66-->
+1-Arrow Function Syntax
+ 1- let print = () =>  10;
+ console.log(print);
+ 
+ 
+Notes...
+1-if we have just one line we can delete the curly brackets { }.
+2-if we have just one line we can convert the curly brackets by underscore ( _ ). 
+3-if we will make an arrow function we must delete (function).
+4-if we using a one line in an arrow function we can delete (return)
+<---End Lesson 66--->
+
+
+
+
+ <---Start Lesson 67-->
+1-Scope – Global And Local.
+<---End Lesson 67--->
+
+
+
+
+ <---Start Lesson 68-->
+1-Scope – Block
+
+Notes...
+1-Var Not a block scope
+<---End Lesson 68--->
+
+
+
+
+ <---Start Lesson 69-->
+1-Scope – Lexical (Static)
+<---End Lesson 69--->
+
+
+
+
+ <---Start Lesson 70-->
+1-Arrow Function Challenge
+<---End Lesson 70--->

@@ -1,0 +1,199 @@
+<---Start Lesson 134-->
+1-Intro And What Is Regular Expression
+ 1-Email
+  let validEmail = "moabdelfattah221@gmail.com"
+ 
+ 2-IP
+  let validIP = "192.168.2.1"
+  
+ 3-URL
+  let validUrl = "elzero.org"
+  let validUrl = "elzero.org/"
+  let validUrl = "http://elzero.org/"
+  let validUrl = "https://elzero.org/"
+  let validUrl = "https://elzero.org/lol"
+  
+ 4-Phone
+  let validPhone = 1111111111;
+<---End Lesson 134-->
+
+
+
+
+<---Start Lesson 135-->
+1-Regular Expression – Modifiers
+ 1-if we want to make pattern we make 
+  let pattern = /msg/;
+  
+ 2-if we want to make match we make 
+  let msg = "Hello Elzero Web School I Love elzero"
+  let pattern = /elzero/;
+  console.log(msg.match(pattern));
+  
+ 3-Modifiers 
+  the modifiers is the way of searching divided into 3 things
+   1-i  => case-insensitive === by order
+   2-g => globally === every thing 
+   3-m => multiLines
+   
+ 4-RegExp Syntax
+  new RegExp("pattern" , "modifier")
+   
+   
+ Note...
+ 1-we put the modifiers after the pattern.
+ 2-match method return an array.
+ 3-returns null if no thing founded
+ 4-we can use more one flag
+<---End Lesson 135-->
+
+
+
+
+<---Start Lesson 136-->
+1-Regular Expression – Ranges Part 1
+ 1-if we want to search a value or another value we male
+  let tld = "Info Com Org Net";
+  let tldRg = /(info | org)/i;
+  console.log(tld.match(tldRg));
+  
+  
+  2-if we want to search for numbers between [0-9] we mak 
+  let nums = "12345678910";
+  let numsReg = /[0-2]/g; 
+  conosle.log(nums.match(numsReg)); // return any number between 0-2
+  
+  
+  3-if we want to search any num not another specific nums we make 
+  let nums = "12345678910";
+  let numsReg = /[^0-2]/g;
+  conosle.log(nums.match(numsReg)); // return any numbers not 0-2
+<---End Lesson 136-->
+
+
+
+
+<---Start Lesson 137-->
+1-Regular Expression – Ranges Part 2
+ 1- if we want to make a range from a to z in lowerCase we make 
+  let pattern = /[a-z]/;
+  
+ 2-if we want to make a Range from a to z in upperCase we make
+    let pattern = /[A-Z]/;
+    
+ 3-if we want to make a range which will return anything without characters we make 
+  let pattern = /[^a-z]/;
+  
+ 4-if we want to make a range of a special characters we make 
+  let pattern = /[abc]/;
+  
+ 5-if we want to get all the small and the capital letters we make 
+   let pattern = /[a-zA-Z]/;
+   
+ 6-if we want to get anything without all the small and the capital letters we make 
+   let pattern = /[^a-zA-Z]/;
+
+ 7- if we want to get all theSpecial characters we make 
+   let pattern = /[^a-zA-Z0-9]/;
+
+<---End Lesson 137-->
+
+
+
+
+<---Start Lesson 138-->
+1-Regular Expression – Character Classes Part 1
+ 1-Character Classes 
+  . => matches any character , except newline or other line terminators.
+  \w => match word characters . [a-z , A-Z , 0-9 and Underscore]
+  \W => match non-word characters.
+  \d => match digits [0-9]
+  \D => match non-digit characters.
+  \s => match white space character 
+  \S => match none white space character
+  
+ 2-validEmail 
+  let pattern = /\w@\w.(com | net)/g;
+<---End Lesson 138-->
+
+
+
+
+<---Start Lesson 139-->
+1-Regular Expression – Character Classes Part 2
+ 1-Character Classes 
+  \b => match at the begining or the end of the word
+  \B => match not at the beging or in the ned of the word
+  
+ 2-test method 
+   test method syntax 
+   pattern.test("");
+  
+Notes..
+1-test method return a boolean value.
+<---End Lesson 139-->
+
+
+
+
+<---Start Lesson 140-->
+1-Regular Expression – Quantifiers Part 1
+ 1-n+ => one or more
+ 2-n* => zero or more
+ 3-n? => zero or one
+<---End Lesson 140-->
+
+
+
+
+<---Start Lesson 141-->
+1-Regular Expression – Quantifiers Part 2
+ 1-n{x} => the numbers
+ 2-n{x,y} => range between 2 numbers
+ 3-n{x,} => at least x
+<---End Lesson 141-->
+
+
+
+
+<---Start Lesson 142-->
+1-Regular Expression – Quantifiers Part 3
+ 1-$ => End with somthing.
+ 2-^ => start with somthing.
+ 3-?= => following by somthing
+ 4-?! =? Not following by somthing
+<---End Lesson 142-->
+
+
+
+
+<---Start Lesson 143-->
+1-Regular Expression – Replace With Pattern
+
+ 1-replace method
+  to replace a value 
+  
+ 2-replaceAll method
+  to replace all values 
+<---End Lesson 143-->
+
+
+
+
+<---Start Lesson 144-->
+1-Regular Expression – Form Validation
+<---End Lesson 144-->
+
+
+
+
+<---Start Lesson 145-->
+1-Test Your Regular Expression
+<---End Lesson 145-->
+
+
+
+
+<---Start Lesson 146-->
+1-Regular Expression – Challenge
+<---End Lesson 146-->

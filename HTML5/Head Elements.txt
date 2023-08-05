@@ -1,0 +1,17 @@
+Head
+
+<!Doctype html> ---- the 5th Verision of HTML.
+
+<meta charset="UTF-8"> ---- to Support Arabic.
+
+<meta name="description" content="Content"> ---- the outline description.
+
+<meta name="keywords" content="......">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="....."> --- To Contact With A css Style. Sheet'
+
+<link rel="shortcut icon" href="....."> ---- to put an imageTabe.
+
+<title></title> ---- the title Of The Page.

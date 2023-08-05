@@ -1,0 +1,154 @@
+<---Start Lesson 57-->
+1-Function Intro And Basic Usage
+ 1- What is the function ?
+  Functions are "self contained" modules of code that accomplish a specific task.
+  Functions usually "take in" data, process it, and "return" a result. Once a function is written, 
+  it can be used over and over and over again. Functions can be "called" from the inside of other functions.
+ 
+ 
+ 2- Function Syntax
+   function functionName (Parameter){
+    // Code here
+   }
+   
+3-To calling the Function 
+ FunctionName ("Argument");
+ 
+<---End Lesson 57--->
+
+
+
+
+<---Start Lesson 58-->
+1-Function Advanced Examples
+ 1-We can have more than one Parameter in our function
+  function functionName (ParemeterOne,ParemeterTwo){
+    // Code here
+   }
+
+  FunctionName ("ArgumentOne", "ArgumentTwo");
+  
+  EXOne
+  ------- 
+  function sayHello (userName , age){
+  if(age < 20){
+   console.log(`This App don't Suitable for you`);
+  }
+  else{
+   console.log(`Hello ${userName} Your age is ${age}`);
+  }
+  }
+  
+  sayHello("Mohamed" , 20);
+  
+  
+  EXTwo
+  ------- 
+  function generateYears(from , to){
+   for(let i = from; i <= to; i--){
+    console.log(`${i}`)
+   }
+  }
+  
+  generateYears(2002 ,2022 )
+  
+<---End Lesson 58--->
+
+
+
+
+<---Start Lesson 59-->
+1-Function Return Statement And Use Cases
+ 1-We can use return instead of console.log at the end of the function.
+ EX
+ ---
+   function generateYears(from , to){
+   for(let i = from; i <= to; i--){
+    return i;
+   }
+  }
+  
+  console.log(generateYears(2002 ,2022 ));
+  
+  
+  
+ 2-We can store the result in a Variable.
+   EX
+   ---
+  let result = generateYears(2002 ,2022 );
+  
+  
+  
+ 3-If the return is empty the function will stop
+ EX
+ ---
+ function generateYears(from , to){
+   for(let i = from; i <= to; i--){
+    if(i === 10){
+     return "Interrupting";
+    }
+   }
+  }
+
+ generateYears(1,5);
+ 
+ 
+  
+Notes...
+1-We can't write anything after the return cause it Stop Execution.
+2-If the return is empty the function will stop.
+<---End Lesson 59--->
+
+
+
+
+<---Start Lesson 60-->
+1-Function Default Parameters
+ 1-if the client doesn't write the age we make 
+  1-if(age === undefined){
+   age = "UnKnown";
+  }
+  
+  2- age = age || UnKnown;
+  
+  3-if we want to make a default value to the parameter we make in the function 
+   function age(age = "UnKnown"){}
+<---End Lesson 60--->
+ 
+ 
+ 
+ 
+<---Start Lesson 61-->
+1-Function Rest Parameters
+ 1-if we don't know the number of parameters we make 
+  we make an array in the function we can make it by ...Array Name.
+   EX
+   ---
+   function calc(...numbers){
+   let result = 0;
+   for(let i = 0; i < numbers.length; i++){
+     results=numbers[i];
+    }
+   return `The Final Result Is ${result}`;
+   }
+   
+   console.log(calc(result));
+   
+Notes...
+1-The Rest Parameters must be one in the Function.
+2-The Rest Parameters must be the last parameters in the function.
+<---End Lesson 61--->
+ 
+ 
+ 
+ 
+<---Start Lesson 62-->
+1-Function Ultimate Practice
+<---End Lesson 62--->
+ 
+ 
+ 
+ 
+ <---Start Lesson 63-->
+1-Random Arguments Function Challenge
+<---End Lesson 63--->

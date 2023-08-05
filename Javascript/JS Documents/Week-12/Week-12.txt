@@ -1,0 +1,186 @@
+ <---Start Lesson 86-->
+1-What Is DOM ? And Select Elements
+ 1-document.getElementById(" ").
+ 2-document.getElementByClassName(" ").
+ 3-document.getElementsByTagName(" ")
+ 4-document.querySelector(" ")
+ 5-document.querySelectorAll(" ")
+ 6-document.title
+ 7-document.body
+ 8-document.forms
+ 9-document.images
+ 
+ 
+Notes...
+1-we can find the elements by ID
+2-we can find the elements by Class Name
+3-we can find the elements by CSS Selectorss
+4-we can find the elements by Collection
+<---End Lesson 86--->
+ 
+ 
+ 
+ 
+ <---Start Lesson 87-->
+1-Get, Set Elements And Attributes
+ 1-we can change the inside content by making 
+  let change = document.getElementById("lol")
+  change.innerHtml = "LOLLOL"
+ 
+ 
+ 2-we can change the content by making
+   let change = document.getElementById("lol")
+   change.textContent = "LOLLOL"
+
+ 
+ 3-we can add an attributes to the tag by making 
+  document.images[0].src = "".
+  document.images[0].alt = "".
+  document.images[0].title = "". 
+  document.images[0].id = "".
+  document.images[0].className = "".
+
+
+4-get Attribute
+ we can use an automatic method to get the attribute 
+  getAttribute("class , id , href")
+
+
+5-set Attribute
+ to change the attribute source we making 
+  setAttribute("AttributeName , theNewValue")
+
+
+Notes...
+1-innerHTML =  gets the inside Content in the Html
+2-textContent = get the text only which inside the element
+<---End Lesson 87--->
+
+
+
+
+ <---Start Lesson 88-->
+1-Check Attributes And Examples
+ 1-to know the attributes in a specific element we use
+  Element.attributes
+  
+  
+  2-to check if the element has an attribute we use
+   Element.hasAttribute("theAttribute")
+  
+  3-to remove an attribute from a specific element we use
+   Element.removeAttribute("theAttribute")
+  
+  4-to check if the element has an attributes we use
+   Element.hasAttributes()
+   
+<---End Lesson 88--->
+
+
+
+
+ <---Start Lesson 89-->
+1-Create and Append Elements
+ 1-To Create an Element we make
+  let element = document.creatElement("div");
+  
+ 2-To add a className we make
+  element.className = "Mohamed";
+  
+ 3-to create an attribute we make
+  let attr = document.creatAttribute("Attribute")
+  element.setAttributeNode(attr);
+  
+ 4-to Add a text into the element we make
+  let text = document.creatTextNode("TheNewText");
+  element.appendChild(text);
+  
+ 5-To put the element into the body we make 
+  document.body.appendChild(element);
+  
+ 6-To create a comment we make
+  let comment = document.creatComment = "Comment"
+  element.appendChild(comment);
+<---End Lesson 89--->
+
+
+
+
+ <---Start Lesson 90-->
+1-Product With Title And Description Practice
+<---End Lesson 90--->
+
+
+
+
+ <---Start Lesson 91-->
+1-Deal With Children
+ 1-if we want to get the inside elements which there in a dad-element we use
+  element.children
+  
+2-if we want to get everything inside the dad-element we use
+ element.childNodes
+  
+3-to get the first child we use 
+ element.firstChild
+ 
+ 4-to get the last child we use 
+ element.lastChild
+ 
+ 5-to get the first element child we use 
+ element.firstElementChild
+ 
+ 6-to get the last element child we use 
+ element.lastElementChild
+ 
+<---End Lesson 91--->
+
+
+
+
+ <---Start Lesson 92-->
+1-DOM Events
+ 1-onclick
+ 2-oncontextmenu  = the right click
+ 3-onmouseenter = once we enter the mouse.
+ 4-onmouseleave = once we leave the mouse.
+ 5-onload = when the window loads.
+ 6-onscroll = when we scroll on the page.
+ 7-onresize = when we resize the window.
+ 8-onfocus = when we focus.
+ 9-onblur = the out of the field 
+10-onsubmit = when we clicked the submit btn for the form
+11-oninput = when we focus on an input field
+<---End Lesson 92--->
+
+
+
+
+ <---Start Lesson 93-->
+1-Validate Form And Prevent Default
+ 1-if we want to stop the progress we use 
+  preventDefault();
+  
+  
+  let userInput = document.querySelector = "[name: "username"]";
+  let ageInput = document.querySelector = "[name: 'age"]";
+  
+ 2-when we want to check the data from a form we make 
+  document.forms[0].onsubmit = function (e) {
+    let userValid = false;
+    let ageValid = false;
+    
+    if(userInput.value !== "" && userInput.value.length <= 10){
+      userValid = true;
+    }
+    
+    if(ageInput.value !== ""){
+      ageValid = true;
+    }
+    
+    if(userValid === false || ageValid === fals){
+    	e.preventDefault();
+    }
+    
+  }
+<---End Lesson 93--->

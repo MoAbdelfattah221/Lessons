@@ -1,0 +1,179 @@
+<---Start Lesson 10--->
+1-Data Types and Typeof Operator.
+ 1-There is a Function To Tell Us The Type of The data it's Called typeof
+  console.log(typeof("Mohamed Waleed"));
+  console.log(typeof "Mohamed Waleed");
+  
+2-Data Types
+ 1-String - (Names or Phrases) - console.log("Mohamed Waleed");
+ 2-Number - (Numbers) - console.log(500);
+ 3-Array => Object - console.log([10 , 20 , 30]);
+ 4-Object - console.log({name: 'Mohamed' , age: 20 , Country: 'Eg'});
+ 5-Boolean - consloe.log(typeof true);
+ 6-Undefined - consle.log(typeof undefined);
+ 7-Null - consloe.log(typeof null);
+<---End Lesson 10--->
+
+
+
+
+<---Start Lesson 11--->
+1-Variables Introduction.
+ How To Declare a Variable?
+ 
+ 1-var + variable Name = variable Value;
+ 2-To Output The Variable
+  consle.log(The Variable Name);
+ 3-The id in HTML Look like variables in JS.
+ 4-To Change a Content of an Element In HTML which have an id called "user"
+  user.innerHTML = "The New Content";
+  
+<---End Lesson 11--->
+
+
+
+
+<---Start Lesson 12-->
+1-Identifiers Name Conventions And Rules
+ 1-don't make a space in the variable name. 
+ 2-don't Start With a Number.
+ 3-don't Put any Special Character in The Variable Name.
+ 4-User don't use.
+ 5-There is a Specific Names We Can't Use as a Variable Name.
+
+2-The Styles of Writing Variable Names
+ 1-CamelCase - userName
+ 2-Slash Case - user/name
+ 3-Snake Case - user_name
+ 4-Pascal Case - UserName
+ 5-Cobra Case - User_Name
+ 6-Dot Case - user.name
+ 7-Dash/Kabab case - user-name
+
+<---End Lesson 12--->
+
+
+
+
+<---Start Lesson 13-->
+1-Var, Let, Const Compare 
+
+ 1-var
+  1-Redeclare(Yes)
+  2-Access Before Declare(Undefined)
+  3-Variable Scope Drama [Added To Window]()
+  4-Block or Function Scope
+
+ 2-let
+  1-Redeclare(No-Error)
+  2-Access Before Declare(Error)
+  3-Variable Scope Drama()
+  4-Block or Function Scope
+
+ 3-const
+  1-Redeclare(No-Error)
+  2-Access Before Declare(Error)
+  3-Variable Scope Drama()
+  4-Block or Function Scope
+
+2-Notes...
+ 1-let , const they were showed up in ECMAScript.
+ 2-Any Var Variable Be in The Window Object and We Can Access on it.
+<---End Lesson 13--->
+
+
+
+
+<---Start Lesson 14-->
+1-String Syntax And Character Escape Sequences.
+ 1-To Print a '' in "" We Make
+  console.log("Mohamed 'Waleed'");
+ 2-To Print a "" in '' We Make
+  console.log('Mohamed "Waleed"');
+ 3-To Print a "" in "" We Use \
+  consle.log("Mohamed \"Waleed\"");
+ 4-To Print a '' in '' We Use \
+  consle.log('Mohamed \'Waleed\'');
+ 5-To Print \ We Write \\.
+
+2-Notes..
+ 1- \ = To Escape a Character.
+ 2- \n = To Start a New Line.
+ 3- \' = To Print a Single Quote.
+ 4- \" = To Print a Double Quote.
+
+<---End Lesson 14--->
+
+
+
+
+<---Start Lesson 15-->
+1-Concatenation.
+ The Concatenation means How To Make a Concatenate With The Data.
+ 1-To Make a Concatenate We Use +.
+  1-EX
+    --
+    var a = "Mohamed ";
+    var b = "Waleed";
+    consle.log(a + b);
+      or
+    document.write(a + b);
+    
+  2-EX
+    --
+    var a = "Mohamed";
+    var b = "Waleed";
+    console.log(a + " " + b);
+      or 
+    document.write(a + " " + b);
+  3-EX
+    --
+    var a = "Mohamed";
+    var b = "Waleed";
+    console.log(a, b);
+
+<---End Lesson 15--->
+
+
+
+
+<---Start Lesson 16-->
+1-Template Literals (Template Strings).
+ 1-To Make a Concatenate and make a new line In JS WE Write
+  var a = "Mohamed";
+  var a = "Waleed";
+  console.log(a + " " + b);
+
+ 2-To Make a Concatenate and make a new line In ECMAScript WE Write
+  var a = "Mohamed";
+  var a = "Waleed";
+  console.log(`${a} "" ${b}`);
+  console.log(`${a}
+  ${b}`);
+ 
+ 3-To Creat an HTML Element and Store it in a Variable in ECMAScript
+  let title = "title";
+  let paragraph = "paragraph";
+  let markUp = `
+  <div class="card">
+   <div class="child">
+    <h2>${title}</h2>
+    <p>${paragraph}</p>
+   </div>  
+  </div>`;
+  
+  document.write(markUp);
+
+3-Notes...
+ 1-if We Want To Print "" In ECMAScript We Write it Without any Escape Character
+ 2-if We Want To Calac 2 Numbers we write
+  console.log(`${100/2}`);
+
+<---End Lesson 16--->
+
+
+
+
+<---Start Lesson 17-->
+1-Variables And Concatenation Challenge
+<---End Lesson 17--->

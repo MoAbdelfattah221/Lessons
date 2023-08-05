@@ -1,0 +1,173 @@
+<---Start Lesson 48-->
+1-Loop For And Concept Of Loop
+ 1-Syntax
+  for(let i = 0; i < 10; i++){
+  // console.log(i);
+  }
+ 
+<---End Lesson 48--->
+
+
+
+
+<---Start Lesson 49-->
+1-Looping On Sequences
+ 1-to print the elements inside the array in the console by for loop we make 
+ let myFrineds = ["Mohamed" , "Waleed" , "Nabil" ,"Abdelfattah" , "Abdelfattah"];
+  for(let i = 0; i < 5; i++){
+  	console.log(myFriends[i]);
+  }
+  
+  
+2-if we want to make a for loop determine the names only not the numbers we make
+  let myFrineds = [1 , 2 , 3 , "Mohamed" , "Waleed" , "Nabil" ,"Abdelfattah" , "Abdelfattah"];
+  let onlyNames = [];
+  for(let i = 0; i < myFriends.length; i++){
+   if(typeof myFriends[i] === "string"){
+    onlyNames.push[myFriends[i]];
+   }
+  }
+  console.log(onlyNames);
+  
+<---End Lesson 49--->
+
+
+
+
+<---Start Lesson 50-->
+1-Nested Loops And Training’s
+ 1-To make nested loop we make for inside for
+ let products = ["Keyboard" , "Mouse" , "Pen" , "Pad" , "Monitor"];
+ let colors = ["red" , "green" , "black"];
+ let models = [2020 , 2021];
+ 
+  for(let i = 0; i < products.length; i++){
+    console.log("----------");
+    console.log(products[i]);
+    console.log("----------");
+    for(let j = 0; j < colors.length; j++){
+        console.log(colors[j])
+    }
+    for(let k = 0; k < models.length; k++){
+        console.log(models[k]);
+    }
+  }
+<---End Lesson 50--->
+
+
+
+
+<---Start Lesson 51-->
+1-Loop Control – Continue, Break, Label
+ 1-break
+  if we want to stop the loop in a specific case we use break;
+    let products = ["Keyboard" , "Mouse" , "Pen" , "Pad" , "Monitor"];
+      for(let i = 0; i < products.length; i++){
+    		if(products[i] === "Pen"){
+    		 break;
+    		}
+    		console.log(products[i]),
+      }
+
+
+ 2-continue
+  if we want to continue the loop in a specific case we use continue;
+   let products = ["Keyboard" , "Mouse" , 11 , 22 , 33 , "Pen" , "Pad" , "Monitor"];
+   for(let i = 0; i < products.length; i++ ){
+    if(typeof products[i] === "number"){
+     continue;
+    }
+    console.log(products[i]);
+   }
+
+
+ 3-label
+  1-To make identifier for a specific loop 
+  label Syntax
+  labelName: for loop(){}  
+ 
+ 
+ 2-we can control any loop if we have there label
+ EX 
+ --
+ let products = ["Keyboard" , "Mouse" , "Pen" , "Pad" , "Monitor"];
+ mainLoop: for(let i = 0; i < products.length; i++ ){
+   console.log(products[i]);
+   nestedLoop: for(let j = 0; j < colors.length; j++){
+        console.log(colors[j]);
+        if(colors[j] === "green"){
+         break;
+        }
+    }
+ }
+
+
+Notes...
+1-if we are using break and want to print the condition element we put the console.log() before the condition.
+2-if we are using break and don't want to print the condition element we put the console.log() after the condition.
+<---End Lesson 51--->
+
+
+
+
+<---Start Lesson 52-->
+1-Loop For Advanced Examples   
+<---End Lesson 52--->
+
+
+
+
+<---Start Lesson 53-->
+1-Practice – Add Products To Page
+We want to make every product will be inside a div ,, every product name will be inside a heading ,, the colors will be inside P
+ let products = ["Keyboard" , "Mouse" , "Pen" , "Pad" , "Monitor" , "iPhone"];
+ let colors = ["Red" , "Green" , "Blue"];
+ let showCount = 5;
+ 
+ document.write(`<h1>Show ${showCount} Products</h1>`);
+ 
+ for(let i = 0; i < showCount.length; i++){
+  document.write(`<div>`);
+  document.write(`<h3>[${i + 1} ] ${products[i]}</h3>`);
+  for(let j = 0; j < colors.length; j++){
+   document.write(`<p>${colors[j]}</p>`);
+  }
+  document.write(`<p>${colors.join(" | ")}</p>`);
+  document.write(`</div>`);
+ 
+ }
+ 
+<---End Lesson 53--->
+
+
+
+
+<---Start Lesson 54-->
+1-Loop – While
+ 1-Syntax
+ let i = 0;
+ while(condition){
+	// Code here.
+	i++;
+ }
+ 
+Notes...
+1-The Counter out the Loop.
+<---End Lesson 54--->
+
+
+
+<---Start Lesson 55-->
+1-Loop – Do, While
+ 1-Syntax
+ do{
+   // Code here
+ }while(Condition);
+ 
+Notes...
+1-if the condition is false in do while it will print for one time.
+<---End Lesson 55--->
+
+<---Start Lesson 56-->
+1-Loop Challenge
+<---End Lesson 56--->

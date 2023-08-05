@@ -1,0 +1,179 @@
+<--- Start Lesson 1 --->
+What is Git ?
+ -- Distributed version control system.
+ -- Git has a GUI
+ 
+ What is GitHub ?
+ -- GitHub is Source for the project and sources.
+<--- End Lesson 1 --->
+
+
+
+<--- Start Lesson 2 --->
+Some Words in Git
+----------------------
+1- Repository
+2- Branch
+3-  Local Repo
+4- Remote Repo
+5- Commit
+6- Clone
+7- Push
+8- Pull
+9- Pull Request
+
+Some Notes
+--------------
+1- Create a new Repo for every Project
+2- Create a new branch for every feature
+<--- End Lesson 2 --->
+
+
+
+<--- Start Lesson 3 --->
+ How I can clone a repo to my local ?
+  1- Go to the Repo that I want to clone
+  2- Get the link of cloning
+  3- Open CMD and go to the folder that I want to put the cloned repo inside it
+  4- write this commnd git clone LinkOfCloning
+<--- End Lesson 3 --->
+
+
+
+<--- Start Lesson 4 --->
+ To know the status of the project
+  -- git status
+  
+  To add everything to the Stage Area
+  -- git add *
+  
+  To remove a spesific file from the stage area
+  -- git reset head fileName
+  
+  To add a commit
+  -- git commit -m "message"
+  
+  To Push 
+  -- git push RemoteName BranchName
+  
+<--- End Lesson 4 --->
+
+
+<--- Start Lesson 5 --->
+ To know all the branchs names
+ -- git branch
+ 
+ To know the name of the remote
+ -- git remote -v
+ 
+<--- End Lesson 5 --->
+
+
+
+<--- Start Lesson 6 --->
+ To add a new member to a Repo
+  -- Go to the Repo that you working in
+  -- Go to the settings of this Repo
+  -- Go to Collaborators and serach for his username
+
+To pull files from a remote repo 
+-- git pull RemoteName
+
+<--- End Lesson 6 --->
+
+
+
+<--- Start Lesson 7 --->
+ To git the configrations
+ -- git config -l
+ 
+ To git the value of config
+ -- git config --global configName
+ 
+ To edit the value of a config
+ -- git config --global configName "NewValue"
+<--- End Lesson 7 --->
+
+
+
+<--- Start Lesson 8 --->
+ Create Public Key
+<--- End Lesson 8 --->
+
+
+
+<--- Start Lesson 9 --->
+  To start a new repo from our local network without  making a new repo in GitHub
+  -- Go  to the folder that you will upload 
+  -- git init
+  -- Go to GitHub and create a new repo
+  -- Follow steps
+<--- End Lesson 9 --->
+
+
+
+<--- Start Lesson 10 --->
+ -- Some Examples
+<--- End Lesson 10 --->
+
+
+
+
+<--- Start Lesson 11 --->
+
+<--- End Lesson 11 --->
+
+
+
+<--- Start Lesson 12 --->
+
+<--- End Lesson 12 --->
+
+
+
+<--- Start Lesson 13 --->
+
+<--- End Lesson 13 --->
+
+
+
+<--- Start Lesson 14 --->
+
+<--- End Lesson 14 --->
+
+
+
+
+<--- Start Lesson 15 --->
+
+<--- End Lesson 15 --->
+
+
+
+<--- Start Lesson 16 --->
+
+<--- End Lesson 16 --->
+
+
+
+<--- Start Lesson 17 --->
+
+<--- End Lesson 17 --->
+
+
+
+<--- Start Lesson 18 --->
+
+<--- End Lesson 18 --->
+
+
+
+<--- Start Lesson 19 --->
+
+<--- End Lesson 19 --->
+
+
+
+<--- Start Lesson 20 --->
+
+<--- End Lesson 20 --->

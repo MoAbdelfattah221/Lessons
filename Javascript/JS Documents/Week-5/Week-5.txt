@@ -1,0 +1,108 @@
+<---Start Lesson 31-->
+1-Comparison Operators
+ == Equal
+ != Not Equal
+ 
+ === Identical
+ !== Not Identical
+ 
+ > Larger Than
+ >= Larger Than or Equal 
+ 
+ < Smaller Than
+ <= Smaller Than or Equal 
+
+Notes..
+== Compare The Value 
+=== Comore the value and the type
+<---End Lesson 31--->
+
+
+
+<---Start Lesson 32-->
+1-Logical Operators
+ ! - Not
+ && - And
+ || - Or
+ 
+<---End Lesson 32--->
+
+
+
+
+<---Start Lesson 33-->
+1-If Condition
+ if
+ else if
+ else
+ 
+ syntax
+ 
+ if(Condition){
+ 
+ // Code here
+ 
+ }
+<---End Lesson 33--->
+
+
+
+
+<---Start Lesson 34-->
+1-Nested If Condition
+<---End Lesson 34--->
+
+
+
+
+<---Start Lesson 35-->
+1-Conditional ternary Operator
+ Condition ? true : false;
+<---End Lesson 35--->
+
+
+ 
+
+<---Start Lesson 36-->
+1-Nullish Coalescing Operator
+ 1-We can write an alternative text if we have (undefined - null - any falsy value)
+  console.log(The Code || The Alternative value)
+   
+ 2-We can write an alternative text if we have (undefined - null)
+  console.log(The Code ?? The Alternative value)
+<---End Lesson 36--->
+
+
+
+
+<---Start Lesson 37-->
+1-If Condition Challenge
+<---End Lesson 37--->
+
+
+
+
+<---Start Lesson 38-->
+1-Switch Statement
+ Syntax 
+ 
+ switch(Condition){
+ case 1: 
+  Code
+ break;
+ 
+ case 2: 
+  Code
+ break;
+
+ default: 
+  Code
+ }
+<---End Lesson 38--->
+
+
+
+
+<---Start Lesson 39-->
+1-Switch And If Condition Challenge
+<---End Lesson 39--->

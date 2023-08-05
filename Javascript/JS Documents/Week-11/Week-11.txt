@@ -1,0 +1,106 @@
+ <---Start Lesson 79-->
+1-Object – Introduction
+ 1-to Know the href of a website we do " window.location.href "
+ 2-to convert the href of a website we make (window.location.assign("The new Link"))
+ 
+2-To declare an object of a user we do
+
+// Properties
+let user = {
+  theName: "Mohamed",
+  theAge: 20;
+
+ //Methods
+ sayHello: function(){
+ console.log(`Hello`);
+ }
+}
+ 
+ console.log(user);
+ 
+Notes....
+1-The Details and the information of the object is called the properties.
+2-The Methods are the Actions Which the object does.
+3-The location of the window is also an objec.
+4-To Access a specific informations inside the object we make (the object.theDetails)
+<---End Lesson 79--->
+
+
+
+
+ <---Start Lesson 80-->
+1-Dot Notation vs Bracket Notation
+ 1-
+Notes...
+1-we can access the object by the bracket notation by [ ].
+2-when we want to access an object by the bracket notation we must put " " inside the [ ] = [" "].
+3-when we want to make a dynamic property we using the bract not the dot notation
+<---End Lesson 80--->
+
+
+
+
+ <---Start Lesson 81-->
+1-Nested Object And Advanced Examples
+
+Notes...
+1-We can make an object inside another object but we will not declare the new object.
+<---End Lesson 81--->
+
+
+
+
+ <---Start Lesson 82-->
+1-Create Object With New Keyword
+ 1-we can add a properties outside the object 
+ let user = {};
+ user.age = 20;
+ 
+ 2-we can add the new keyword 
+  let user = new object();
+<---End Lesson 82--->
+
+
+
+
+ <---Start Lesson 83-->
+1-This Keyword
+<---End Lesson 83--->
+
+
+
+
+ <---Start Lesson 84-->
+1-Create Object With Create Method
+ 1-we can create a prototype of an object by
+  Object.create(The Prototype);
+  
+  EX
+  ---
+  let user = {
+   age: 20,
+   ageX2: function(){
+   return this.age * 2;
+   }
+  }
+  
+  
+  let createObject = Object.create(user);
+  console.log(createObject.age)
+  console.log(createObject.ageX2)
+  
+<---End Lesson 84--->
+
+
+
+
+<---Start Lesson 85-->
+1-Create Object With Assign Method
+ 1-we can create an object by Assign Method
+ Assign Method Syntax..
+ let newObject = Object.assign(TargetObject , Source)
+ 
+Notes...
+1-we can write an empty target.
+2-if we have a lot of properties has the same name it's takes the first.
+<---End Lesson 85--->

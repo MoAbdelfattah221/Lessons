@@ -1,0 +1,20 @@
+1-Node,js is a runtime for JS
+
+2-JS Engin
+ 1-Chrome - V8
+ 2-Internet Exploler - Chekra
+ 3-Mozilla - Spider Monkey
+
+3-npm stands for Node Package Manager
+
+4-to Download Package.json file we make 
+ npm init -y
+
+5-we can edit the scripts section in Package.json file
+
+6-npm install = npm i
+ 1-to download any thing
+
+7-node_modules is a folder contains our extensiions 
+
+8-dependencies are the extenssions wich we using 

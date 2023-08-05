@@ -1,0 +1,308 @@
+<---Start Lesson 123-->
+1-Set Data Type And Methods
+ 1-set data type take an array and don't return the repeat value;
+ 
+ Syntax
+ let array = [1,1,1,2,3]
+ let v = new set (Iterable); // {1,2,3}
+ 
+ 2- if we want to know the length of the set data type we use size.
+  Example
+  ---------
+  console.log(v.size);
+  
+ 3-Methods
+  1-if we want to add a value into the set data type we use 
+   v.add(the value);
+   
+  2-if we want to delete a value from the set data type we use
+   v.delete(the value)
+  
+  3-if we want to delete all the values in the set data type we use
+   v.clear().
+  
+  4-if we want to check if we have a specific element in the set data type we use 
+   v.has(the element)
+   
+Notes...
+1-the set data type store the values in an object.
+2-we can't access the elements in the set data type by index.
+<---End Lesson 123-->
+
+
+
+
+<---Start Lesson 124-->
+1-Set vs WeakSet And Garbage Collector
+ 1-The WeakSet is weak,
+  meaning references to objects in a WeakSet are held weakly.
+  if no other references to an object stored in the WeakSet exist,
+  those objects can be garbage collected
+
+  WeakSet Syntax
+  let weak = new WeakSet ([{}]);
+
+ 2-set Methods
+  1-to show the values in the set we use 
+   set.keys();
+ 
+  2-we can use next method with the keys method to know which element
+  we will print 
+ 
+  3-we can use value method with the next method to know the value of 
+  the element 
+
+
+
+ 3-The Difference between set and WeakSet
+  --
+  set => can store any data values.
+  WeakSet => collection of objects only.
+  --
+  
+  --
+  set => Have Size Property
+  WeakSet => Doesn't have Size Property
+  --
+  
+  --
+  set => Have Keys , Values , Entries.
+  WeakSet => Doesn't have clear Keys , Values , Entries., 
+  --
+
+ --
+  set => can use foreach
+  WeakSet => can't use foreach
+  --
+  
+Notes..
+1-when we use next method it's returns true when arrives to the end of the iteration  
+  
+<---End Lesson 124-->
+
+
+
+
+<---Start Lesson 125-->
+1-Map Data Type vs Object
+ 1-Syntax
+ let map = new Map(Iterable with key/value)
+ 
+ 2-The difference between object and map.
+  --
+  object => Has default keys. 
+  Map =>  Does not contain a key by default. 
+  --
+
+  --
+  object => the key can be string or symbol only.
+  Map => the key can be anything[function , object , boolean]
+  --
+
+  --
+  object => Not 100% until now.
+  Map =>ordered by insertion
+  --
+
+  --
+  object => Need to do it manually
+  Map => get items by size.
+  --
+
+  --
+  object => not directly iterated and to do that you need to use object.keys()
+  Map => can be directly iterated
+  --
+
+  --
+  object => 
+  Map => better performance when using add or remove.
+  --
+
+
+3-if we want to creat an object with no properties we do
+ let o = Object.create(null)
+ 
+ 
+4-if we want to add to map we use set 
+map.set(key , value);
+
+and to get those values we use  
+map.get(key);
+
+<---End Lesson 125-->
+
+
+
+
+<---Start Lesson 126-->
+1-Map Methods
+ 1-to add a new keys to the map we use set method 
+  let map = new Map();
+  map.set(key , value);
+  OR
+  let map = new Map([
+  	[key , value],
+  	[key , value],
+  	[key , value],
+  ]);
+  
+ 2-to access a specific key we use get method 
+  map.get(key);
+  
+ 3-to delete a specific key we use delete method 
+  map.delete(key);
+  
+ 4-to clear all the keys inside the map we use  clear method
+  map.clear();
+  
+ 5-to check if we have a specific key we use has method 
+  map.has(key);
+ 
+ 6-to know the length of the map we use size method 
+  map.size;
+  
+Notes...
+1-when we use delete and return true it means it's successful delete the key.
+2-when we use delete and return false it means it failed to delete the key.
+<---End Lesson 126-->
+
+
+
+
+<---Start Lesson 127-->
+1-Map vs WeakMap
+ 1-WeakMap allows the garbage collector to do its task but not map.
+ 
+ 2-The Difference.
+  1-Map --- Key can be anything.
+  2-WeakMap --- key can be an object only.
+<---End Lesson 127-->
+
+
+
+
+<---Start Lesson 128-->
+1-Array.from Method
+ 1-Array.form("") Syntax
+ Array.form(iterable , MapFunction , this);
+ 
+ 
+ 2-Example
+ ----------
+ Array.form("12345" , function (n){
+ 	return +n + +n;
+ }) // 246810 as an array.
+ 
+ 
+ 3-Example
+ ------------
+ let myArray = [1,1,1,2,3,4];
+ let set = new Set (myArray); // return the value as an object
+ console.log(Array.form(myArray , function(n){
+ 	return +n + +n;
+ })) // 2468 as an array.
+ 
+ 
+ if we want to return the arguments as an array we make 
+ function af (){
+ 	return Array.form(arguments);
+ }
+ 
+ 
+Notes...
+1-Array.form method return the result as an array. 
+2-if we have a value came from new set we can return it as an array by using sprit operator ...
+<---End Lesson 128-->
+
+
+
+
+<---Start Lesson 129-->
+1-Array.copyWithin Method
+ 1-Array.copyWithin Syntax
+  arrayName.copyWithin(target , start , end);
+ 
+ 2-the copyWithin method it's copy apart of the array and paste it in the same array.
+ 
+ 
+Notes...
+1-Not including end
+2-if we want to start from the end we use negative values.
+3-if we don't determine the start it will start from Index 0.
+4-if we don't determine the end it will confirm the end.
+<---End Lesson 129-->
+
+
+
+
+<---Start Lesson 130-->
+1-Array.some Method
+ 1-array.some Syntax
+  array.some(callBack function() , this);
+  callBack function(element , index , array);
+   1-element => the current element to process
+   2-index => index of the current element 
+   3-array => the  current array which we working with
+   4-this Argument => value to use as this when Executing callback function.
+  
+  
+Notes...
+1-array.some() return Boolean value
+2-array.some return true of one of the elements condition is true
+<---End Lesson 130-->
+
+
+
+
+<---Start Lesson 131-->
+1-Array.every Method
+ 1-array.every() Syntax
+    array.every(callBack function() , this);
+    callBack function(element , index , array);
+    1-element => the current element to process
+    2-index => index of the current element 
+    3-array => the  current array which we working with
+    4-this Argument => value to use as this when Executing callback function.
+
+ 
+Notes...
+1-array.every method return true if all the elements inside the condition are true 
+2-if one element inside the condition is a false array.every will return false for all the elements.
+<---End Lesson 131-->
+
+
+
+
+<---Start Lesson 132-->
+1-Spread Syntax And Use Cases
+ let content = "Mohamed";
+ 1-if we want to extract a content into an array we use 
+ console.log([...content]);
+ 
+ 2-if we want to extract the content into just characters we make 
+  console.log(...content);
+  
+ 3-if we want to make concatenate with two arrays we make 
+  [...arrayOne , ...arrayTwo]; 
+ 
+ 4-if we want to copy an array we make 
+ let copyArray = [...array];
+  
+ 5-if we want to push a content of an array into another we make 
+ arrayOne.push(...arrayTwo)
+ 
+ 6-if we want to know the max number of an array we make 
+  Math.max(...array)
+ 
+ 7-if we want to merge two objects we make 
+ console.log({...objOne , ...objTwo});
+ 
+Notes...
+1-the spread extract the content in his place
+<---End Lesson 132-->
+
+
+<---Start Lesson 133-->
+1-Map And Set Challenge
+<---End Lesson 133-->

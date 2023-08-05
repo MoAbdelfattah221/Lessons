@@ -1,0 +1,300 @@
+Body
+
+<!-- Comments -->
+
+<<---Start Formatting Elements--->>
+
+<b>.....</b> ---- Text Bold.
+
+<strong>.....</strong> ----  Important bold Text.
+
+<i>.....</i> ---- italic.
+
+<em>.....</em> ---- italic.
+
+<mark>.....</mark> ---- highlight Text.
+
+<u>.....</u> ---- UnderLine 
+
+<small>.....</small> ---- Samller Text.
+
+<del>.....</del> ---- Deleted Text.
+
+<ins>.....</ins> ---- Inserted Text.
+
+<sub>.....</sub> ---- Subscript.
+
+<sup>.....</sup> ---- Superscript.
+
+<br> = Break line.
+
+<hr> Horizontal Rule.
+
+<<---End Formatting Elements--->>
+
+<<---Elements--->>
+
+<h3>.....</h3> ---- the Heading Elmentes From 1 To 6 = block.
+
+<p>......</p> ---- Pargraph = block.
+
+<a href="...." target="_blank" title=".....">.....</a> = Inline.
+
+<a href="mailto:......" target="_blank" title=".....">.....</a> = Email.
+
+<img src="....." alt="....."> = Inline.
+
+<ul>.....</ul> ---- Unorder List = Block.
+
+<ol>.....</ol> ---- Order List = Block.
+
+<li>.....</li> ---- List = Block.
+
+<dl>.....</dl> ---- Description List.
+
+<dt>.....</dt> ---- Term.
+
+<dd>.....</dd> ---- Description Term.
+
+<span>.....</span> = Inline Element.
+
+<div>......</div> = Block.
+
+<q>.....</q> = Inline.
+
+<blockquote>.....</blockquote> = Block.
+
+<button>.....</button> = Inline.
+
+<wbr> ---- To Make A break To A Link.
+
+<bdi>.....</bdi>
+
+<code>.....</code>
+
+<pre>.....</pre>
+
+<iframe src="" frameborder="0"></iframe>
+to put an Image and her caption we use
+<figure>
+	<img src=".....">
+	<figcaption>.......</figcaption>
+</figure>
+
+<<--Start Audio--->>
+
+<audio src="....mp3" type="audio/mpeg"></audio>
+
+Attributs in Audio
+controls = to Control In The Audio File.
+loop = To Repeat The Audio File.
+muted = to make the Audio File Mute.
+
+Your Browser Does Not Support Audio Tags
+
+<<---End Audio--->>
+
+<<---Start Video--->>
+
+<video src="......" type="video/mp4"></video>
+
+Attributs in Video
+
+controls = to Control In The Video File.
+width = to control in the Width .
+height = to control in the Height.
+autoplay = Automatic Play.
+loop = To Repeat The Video File.
+muted = to make Video Mute.
+poster="..." = To Put an Image When video Loading.
+Your Browser Does Not Support Video Tags.
+
+<<---End Video--->>
+
+<<---Start Form--->>
+
+<form>
+ <div>
+  <label>UserName</label>
+  <input type="text"> = Inline.
+ </div>
+<br>
+ <div>
+  <label>PassWord</label>
+  <input type="passsword"> = Inline.
+ </div>
+<br>
+ <div>
+  <label>Email</label>
+  <input type="email"> = Inline.
+ </div>
+
+<input type="reset">
+
+<input type="submit">
+
+<input type="hidden">
+
+<label>Color</label>
+<input type="color">
+
+<input type="range" min="0" max="100" step="20" value="0">
+
+<label>Number</label>
+<input type="number" min="1" max="100" step="20">
+
+
+<div class="radio and checkbox">
+ <div class="radio">
+  <input id="win"type="radio" name="os" value="Windows">
+  <label for="win">Windows</label>
+  <input id="Mac" type="radio" name="os" value="Mac">
+  <label for="Mac">Mac</label>
+ </div>
+ 
+ <div class="checkbox">
+  <input id="win"type="checkbox" name="os" value="Windows">
+  <label for="win">Windows</label>
+  <input id="Mac" type="radio" name="os" value="Mac">
+  <label for="Mac">Mac</label>
+ </div>
+</div>
+
+<div class="select">
+ <label for="se">Select Your Country</label>
+ <select id="se" name="Country">
+	<optgroup label="Africa">
+	  <option value="Egypt">Egypt</option>
+ 	  <option value="Algria">Algria</option>
+ 	  <option value="Morocco">Morocco</option>
+ 	  <option value="SouthAfrica">SouthAfrica</option>
+	</optgroup>
+	<optgroup label="Euorpe">
+	  <option value="England">England</option>
+ 	  <option value="France">France</option>
+ 	  <option value="Germany">Germany</option>
+ 	  <option value="Finland">Finland</option>
+	</optgroup>
+ </select>
+</div>
+<div class="TextArea">
+ <label for="txt">TextArea</label>
+ <textarea id="txt" name="Subject" ></textarea>
+</div>
+
+<div class="File">
+ <label for="f">File</label>
+ <input id="f" type="file">
+</div>
+
+<div class="Serch">
+ <label for="s">Serch</label>
+ <input id="s" type="serch">
+</div>
+
+<div class="Url">
+ <label for="u">URL</label>
+ <input id="u" type="url">
+</div>
+
+<div class="date">
+ <label for="d">date</label>
+ <input id="d" type="date">
+</div>
+
+<div class="Time">
+ <label for="t">Time</label>
+ <input id="t" type="Time">
+</div>
+
+<div class="List">
+ <input list="programming" name="programming">
+ <datalist id="programming">
+  <option value="PHP"></option>
+  <option value="C"></option>
+  <option value="C#"></option>
+  <option value="C++"></option>
+ </datalist>
+</div>
+</form>
+To Make Conection with The Label and the input we Use id and for. 
+The List Butter Than Select.
+Attributs In Form.
+
+action="...." = To Send Data To a Spcefic File.
+method="GET or POST" = the Way Of Sending The Data.
+novalidate = No required Fields.
+target="_blank" = to open the page in new tab.
+Attributs In Inputs Form.
+
+required = Important Field.
+placeholder = Text Into The Input Element.
+value = To Write a Value.
+name="...." = To Make Server Know The Incoming Data From Any Inputs.
+readolny = Conest Value and The Data Recive.
+disabeld = Conest Value and The Data Dont Recive.
+autofoucs = Automatic Foucs.
+minlenght = Minmiem Lenght Of Charcters.
+maxlenght = Maxmium Lenght Of Charcters.
+checked = Automatic Checked in Radio Inputs.
+selected = Automatic Checked in Select Option.
+<<---End Form--->>
+
+<<---Star t Semantic Elements--->>
+
+<header></header>
+
+<nav></nav>  
+
+<section></section>
+
+<aside></aside>
+
+<article></article>
+
+<footer></footer>
+
+All Of The Semantic Elements Are Block. 
+
+<<---End Semantic Elements--->>
+
+<<---Start Entities--->>
+
+&ls;....&gt;
+
+&lt; = less Than.
+
+&gt; = Greeter Than.
+
+&copy; = CopyRight.
+
+<<---End Entities--->>
+
+<<---Start Table Element--->>
+
+<table>
+<caption>.....</caption> = Caption Of The Table.
+	<thead>
+		<tr>
+			<th>First</th>
+			<th>Last</th>
+			<th>Marks</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Mohamed</td>
+			<td>Abdelfattah</td>
+			<td>71</td>
+		</tr>
+	</tbody>
+	<tfoot>
+	</tfoot>
+</table>
+
+tr = Table Row.
+th = Table Head.
+td = Table Data Cell.
+Use Attribute colspan="Number" To Merge Cells.  
+
+<<---End Table Element--->>

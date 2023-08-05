@@ -1,0 +1,75 @@
+<---Start Lesson 111-->
+1-Local Storage
+ 1-if we want to store data and save it in the browser we make
+  window.localStorage.setItem("Key" , "Value")
+  EX
+  ---
+  window.localStorage.setItem("color" , "red")
+
+
+ 2-we can make it in another way 
+ window.localStorage.KEY = "value";
+
+
+ 3-we can make it in another way 
+ window.localStorage["key"] = "value";
+
+
+2-if we want to use the local we make 
+ window.localStorge.getItem("key")
+ 
+ 1-another way to get the local 
+  window.localStorge.key
+  
+ 2-another way to get the local 
+  window.localStorge["key"]
+   
+
+ 3-how to use it in the page 
+  document.body.style.backgroundColor = window.localStorge.getItem("key");
+
+
+ 4-if we want to remove an item we make 
+  window.localStorage.removeItem("key");
+  
+  
+  5-if we want to remove all items we make
+   window.localStorage.crear();
+  
+  
+  6-if we want to get key we make 
+   window.localStorage.key(index)
+  
+  
+  
+Notes...
+1-the local storage not have an expiration time 
+2-there is a difference between how to storage in HTTP and HTTPS
+3-if we have a private tab the local storage will not works if we close it
+4-the localStorage is an object
+5-we can show the local storage objects in Application in DevTools
+<---End Lesson 111-->
+
+
+
+
+<---Start Lesson 112-->
+1-Local Storage Color App Practice
+<---End Lesson 112-->
+
+
+
+
+<---Start Lesson 113-->
+1-Session Storage And Use Cases
+
+Notes...
+1=the session storage is the same local storage the difference that save the data for one time only
+<---End Lesson 113-->
+
+
+
+
+<---Start Lesson 114-->
+1-Bom Challenge
+<---End Lesson 114-->

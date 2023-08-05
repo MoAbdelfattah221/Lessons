@@ -1,0 +1,175 @@
+<---Start Lesson 40-->
+1-Array Big Introduction
+ 1-To make an array we make 
+ let myFriends = ["Mohamed" , "Waleed" , "Nabil"];
+ To Access to a specific name we make 
+ console.log(`${myFriends[0]}`); \\ Mohamed
+ console.log(`${myFriends[1]}`); \\ Waleed
+ console.log(`${myFriends[2]}`); \\ Nabil
+
+ 
+ 2-if we want to access a specific character in a specific name we make
+ console.log(`${myFriends[The Name][The Character]}`)
+
+
+ 3-To make nested array 
+ let myFriends = ["Mohamed" , "Waleed" , ["Ali" , "Mohsen"]];
+ to access on an index in the nested array we make
+ console.log(`${myFriends[2][1]}`); \\ Mohsen
+ 
+ to access on a specific index in the nested array we make
+ console.log(`${myFriends[2][1][0]}`); \\ M
+
+
+ 4-if we want to change the content of a specific index we make
+ myFriends[1] = "Ahmed";
+ 
+ 
+ 5-if we want to change an array to one word we make 
+ myFriends[2] = "Gamal";
+ 
+ 
+ 6-if we want to change the content of an array we make 
+ myFriends[2] = ["Gamal" , "Labib"];
+ 
+ 
+ 7-if we want to check if this is array or not we make
+ console.log(Array.isArray(The Array Name)); // True or False
+ 
+<---End Lesson 40--->
+
+
+
+
+<---Start Lesson 41-->
+1-Using Length With Array
+let myFriends = ["Mohamed" , "Waleed" , ["Ali" , "Mohsen"]];
+ 1-To know the number of the elements inside the array we use 
+ console.log(myFriends.length); // 3
+ 
+ 
+ 2-if we write an index not there in the real it will be count and will show in the console
+ myFriends[7] = "Mohamed";
+ 
+ 
+ 3-if we want to add a new content in the last index in a dynamic way we make
+ myFriends.length = "Ali";
+    OR
+ myFriends[myFriends.length - 1] = "The New Content";
+ 
+ 4-if we want to control in the length of an array we make
+ myFriends.length = 3;
+ 
+<---End Lesson 41--->
+
+
+
+
+<---Start Lesson 42-->
+1-Add And Remove From Array
+ 1-unshift()
+ To Add a New items in the start of the Array We use
+ myFriends.unshift("Mohamed" , "Ali");
+ 
+ 
+ 2-push()
+ To Add a New items in the End of the Array We use
+ myFriends.push("Mohamed" , "Ali");
+ 
+ 
+ 3-shift()
+ To Remove the first item in the Start of the Array We use
+ myFriends.shift();
+<---End Lesson 42--->
+
+
+4-pop()
+ To Remove The last item in the array we use
+ myFriends.pop();
+
+<---End Lesson 42--->
+
+<---Start Lesson 43-->
+1-Searching Array
+ 1-indexOf
+ 2-lastIndexOf()
+ 3-includes() 
+ 
+Notes..
+if the value === -1 the result will be Not Found 
+<---End Lesson 43--->
+
+
+
+
+<---Start Lesson 44-->
+1-Sorting Array
+ 1-to sort an array in Descending Order we use 
+ console.log(`myFrineds.sort()`);
+ 
+ 
+ 2-to sort an array in Ascending order we use
+ console.log(`myFrineds.reverse()`);
+ 
+<---End Lesson 44--->
+
+
+
+
+<---Start Lesson 45-->
+1-slice
+ To slice an array we use
+ 1-slice(start [Opt] , End [Opt] Not Including End)
+ consle.log(myFriends.slice(0,2));
+ 
+ if we write a Negative value it will count from the End
+
+
+2-splice
+ 1-splice(start (Mand) , Delete Count [Opt])
+ if we want to Delete an elements from the array we use
+ console.log(`myFriends.splice(0,2)`); // Remove
+ 
+ 2-splice(start[Mand] , End [Opt] , The New Content)
+ if we want to add a new elements in the array we use 
+ console.log(`myFriends.splice(The start index , the End index ,"Mohamed" , "Waleed")`)
+ 
+ Notes..
+ 1-Slice doesn't save the changes in the array. 
+ 2-Splice saves the changes in the array.
+ 3-if i will add a new content the end will be 0.
+ 
+<---End Lesson 45--->
+
+
+
+
+<---Start Lesson 46-->
+1-Joining Arrays
+ 1-concat
+ To make concatition with Two Arrays we use 
+ EX
+ --
+ let allFriends = THE FIRST ARRAY.concat(THE SECOND ARRAY , THE THIRD ARRAY);
+ 
+ 
+ 2-We can add items into the concatenate or a new array
+  let allFriends = THE FIRST ARRAY.concat(THE SECOND ARRAY , THE THIRD ARRAY , "THE NEW ITEMS" , ["THE NEW ARRAy"]);
+
+
+2-join
+ it's convert the array into a String and join the items of the array with themselves
+ console.log(myFriends.join(THE SEparator));
+ 
+ 
+Notes..
+1-if we didn't write any thing in the separator it will spilt them with ,,,,
+2-if the separator is Empty "" it will not spilt them
+
+<---End Lesson 46--->
+
+
+
+<---Start Lesson 47-->
+1-Array Challenge
+<---End Lesson 47--->

@@ -1,0 +1,151 @@
+<---Start Lesson 115-->
+1-Destructuring Arrays Part 1
+ 1-Destructuring is a javascript expression that allows us to extract data from arrays ,
+     objects, and maps and set them into new , distinct variables.
+     
+ 2-if we want to make destructing we make 
+  let myFrinds = ["Mohamed" , "Waleed" , "Nabil" , "Abdelfattah"]
+  let [a ,b ,c ,d] = myFrinds;
+  then 
+  a = Mohamed 
+  b = Waleed
+  c = Nabil
+  d = Abdelfattah
+  
+Notes...
+1-if we have a plus variable and his value is empty the result will be undefined
+2-we can give these variables a default value.
+3-if we want to escape a value we put empty --- [a, ,c] 
+
+<---End Lesson 115-->
+
+
+
+
+<---Start Lesson 116-->
+1-Destructuring Arrays Part 2
+ 1- Advanced Example
+ ------------------------
+ let myFriends = ["Ahmed" , "Sayed" , "Ali" ,["Shady" , "Amr" , ["Mohamed" , "Gamal"]]];	
+ we want to extract shady - gamal
+ 
+ let a, b;
+ [, , , [a , , [ , b]]] = myfrinds
+ 
+ <---End Lesson 116-->
+
+
+
+
+<---Start Lesson 117-->
+1-Destructuring Arrays Part 3 Swapping Variables
+ 1-we have two ways to swapping variables 
+ 
+ let book = "video";
+ let video = "book";
+
+ Example-one
+ --------------
+ let stash = video // book
+ video = book;
+ book = stash
+ 
+ Example-two
+ --------------
+ [book , video] = [video , book];
+ 
+<---End Lesson 117-->
+
+
+
+
+<---Start Lesson 118-->
+1-Destructuring Objects Part 1
+ 1-we have an object and want to destruct it we make
+ user{
+ 	theName: "Mohamed";
+ 	theAge: 20;
+ 	theCountry: "Egypt";
+ }
+ 
+ if we declare a variables we make 
+ {theName, theAge, theCountry} = user
+ 
+Notes...
+1-if we want to escape a property we don't write here name.
+2-if we had already declared the variables we put the destructing in a ( );
+3-when we use destructing with objects we use { };
+<---End Lesson 118-->
+
+
+
+
+<---Start Lesson 119-->
+1-Destructuring Objects Part 2
+ 1-we can make extract an nested object by making
+ const user = {
+ 	theName: "Mohamed",
+ 	theAge: 20,
+ 	theCountry: "Egypt",
+	skills: {
+		html = 90,
+		css = 97,
+		bootstrap = 80,
+		js = 60,
+	}
+ }
+ 
+ {theName , theAge, theCountry, skills: {html , css , js}} = user
+  or making
+ const {html , css} = user.skills
+ 
+Notes..
+1-we can rename the variables with by  theProperty: theNewName;
+Example
+---------
+ {theName: name, theAge: age, theCountry = "Eg"} = user
+ console.log(name) // theName
+
+2-ifw we have a property and want to extract it and it's empty , it will extract the default value look like the country
+<---End Lesson 119-->
+
+
+
+
+<---Start Lesson 120-->
+1-Destructuring Function parameters
+ 1-if we want to destruct a function we make 
+ const user = {
+ 	theName: "Mohamed",
+ 	theAge: 20,
+ 	theCountry: "Egypt",
+	skills: {
+		html = 90,
+		css = 97,
+		bootstrap = 80,
+		js = 60,
+	}
+ }
+ 
+
+2-function showDetails ({theName , theAge , theCountry} = user){
+	console.log(theName)
+	console.log(theAge)
+	console.log(theCountry)
+}
+<---End Lesson 120-->
+
+
+
+
+<---Start Lesson 121-->
+1-Destructuring Mixed Content
+ 1-training 
+<---End Lesson 121-->
+
+
+
+
+<---Start Lesson 122-->
+1-Destructuring Challenge
+<---End Lesson 122-->

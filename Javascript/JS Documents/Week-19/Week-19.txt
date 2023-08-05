@@ -1,0 +1,246 @@
+<---Start Lesson 147-->
+1-OOP Introduction
+ 1-What is OOP ? 
+  1-OOP stand for => Object Oriented Programming
+  2-OOP is a Paradigm or style of code.
+  3-OOP uses the concept of Object to design a computer program.
+  4-it's Not new => Simula is the first OOP Programming Language at 1960. 
+  5-Some languages support OOP and some do not.
+  6-Object is a Package Contains Properties and Functions that work together to produce something in your application, 
+  functions here called Methods.
+ 
+ 
+ 2-Object Simulation 
+  1-Methods - EX
+   1-Walk
+   2-Stop
+  
+  2-Properties
+   1-Color
+   2-Price
+   
+ 
+ 3-Why do we use OOP ?
+  1-You will be able to create a large and complex software architecture in an organized way. 
+  2-You will be able to hide certain parts of code in your object with Encapsulation to
+  prevent mess with the code 
+  3-You will be able to create reusable Objects to use in your application easily with inheritance 
+  
+<---End Lesson 147-->
+
+
+
+
+<---Start Lesson 148-->
+1-Constructor Function Introduction
+ 1-Constructor Function Syntax 
+  function funcationName (parameter){
+  	this.parameter = parameter;
+  	this.parameter = parameter;
+  	this.parameter = parameter;
+  }
+  let userOne = new functionName (parameter);
+  
+Notes...
+1-the first letter in the function name should be Upper case.
+<---End Lesson 148-->
+
+
+
+
+<---Start Lesson 149-->
+1-Constructor Function New Syntax
+ 1-ECMAScript Constructor function syntax 
+  class funcationName{
+  constructor(parameter){
+  	this.parameter = parameter;
+  	this.parameter = parameter;
+  	this.parameter = parameter;
+   }
+  }
+  
+ 2-if we want to know the instance of the object we make 
+  cnosole.log(object instanceof funcrionName);
+  
+  the second way 
+  
+  console.log(object.constructor === functionName)
+  
+Notes...
+1-instanceof return a Boolean value.
+2-if we want to convert a constructor function into a ECMAScript we make CTRl + .
+<---End Lesson 149-->
+
+
+
+
+<---Start Lesson 150-->
+1-Deal With Properties And Methods
+ 
+Notes...
+1-we write the methods After the contractor.
+2-if we want to access the method we make 
+ console.log(userOne.msg());
+3-if we didn't write the () it will return a Native Code.
+<---End Lesson 150-->
+
+
+
+
+<---Start Lesson 151-->
+1-Update Properties And Built In Constructors
+ 1-if we want to update the property we make
+   class funcationName{
+   constructor(parameter){
+  	this.parameter = parameter;
+  	this.parameter = parameter;
+  	this.parameter = parameter;
+   }
+   updateName(newName){
+    this.parameter = newName;
+   }
+  }
+
+consloe.log(functionName.methodName("NewName"));
+
+
+2-String and Number Are a built in stractor
+
+<---End Lesson 151-->
+
+
+
+
+<---Start Lesson 152-->
+1-Class Static Properties And Methods
+ 1-if we want to make a static property we make 
+  static propertyName;
+  
+ 2-if we want to access this static property we make 
+  console.log(className,staticProperty)
+ 
+ 3-if we want to make a static method we make 
+  static methodName;
+
+ 4-if we want to access this static method we make 
+  console.log(className,staticMethodName)
+
+ 
+Notes...
+1-the static properties and methods it's about the class not the object 
+<---End Lesson 152-->
+
+
+
+
+<---Start Lesson 153-->
+1-Class Inheritance
+ 1-if we want to make a inheritance from object to a specific object we make 
+  class User{
+   contractor(id,userName){
+    this.i = id;
+    this.u = userName;
+   }
+  }
+  
+  class Admin extends User{
+     contractor(pro){
+       super(id,userName)
+       this.p = pro;
+   }
+  }
+
+Notes...
+1-extends = to determine which object we will inheritance of.
+2-super = put in this property the parameters of the parent class. 
+<---End Lesson 153-->
+
+
+
+
+<---Start Lesson 154-->
+1-Class Encapsulation
+ 1-if we want to make a private property we put before it # and redeclare it before the contractor
+ 
+Notes...
+1-class fields are public by default
+2-guards the data against illegal access.
+<---End Lesson 154-->
+
+
+
+
+<---Start Lesson 155-->
+1-Prototype Introduction
+ 1-Prototypes are the mechanism by which javascript objects inherit features from one another. 
+ 
+Notes...
+1-if we want to know the prototype of an object we make 
+ object.prototype
+<---End Lesson 155-->
+
+
+
+
+<---Start Lesson 156-->
+1-Add To Prototype Chain
+ 1-if we want to add a new prototype chain to the class we make 
+  className.prototype.functionName = function(){
+   return `Hello`
+  }
+<---End Lesson 156-->
+
+
+
+
+<---Start Lesson 157-->
+1-Object Meta Data And Descriptor Part 1
+ 1-if we want to add a new property we make 
+ const myObject = {
+  a:1,
+  b:2,
+ }
+ Object.defineProperty(ObjectName , property, {
+ 	writable: True or False
+ 	enumerable: True or False
+ 	configurable: True or False
+ 	value: the value of the property.
+ })
+ 
+ 
+ 2-when we want to delete a property we use
+  delete objectName.property.
+ 
+ Notes...
+ 1-writable => when we want to redeclare.
+ 2-enumerable => when we want to control in looping on this object
+ 3-configurable => if the value is false it will not delete or redefine.  
+ 4-the descriptor takes a Boolean value.
+ 5-when we using delete method in the console it's returns a Boolean value , true if success , false if failed
+<---End Lesson 157-->
+
+
+
+
+<---Start Lesson 158-->
+1-Object Meta Data And Descriptor Part 2
+ 1- if we want to add a new property we make at the same time we make
+  Object.defineProperties(objectName , {
+  	property: {
+  		descriptor.
+  	}
+  	property: {
+  		descriptor.
+  	}
+	property: {
+  		descriptor.
+  	}
+  })
+  
+ 2-to check a property descriptor we make 
+  Object.getOwnPropertyDescriptor(objectName , propertyName)
+  
+3-to check all the properties's descriptor of an object we make 
+ Object.getOwnPropertyDescriptors(objectName)
+ 
+<---End Lesson 158-->
