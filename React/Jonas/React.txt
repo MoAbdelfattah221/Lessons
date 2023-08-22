@@ -1,19 +1,19 @@
 -- This  Course contains 31 section.
 
 < --- Start Section 1 --- >
--- Lesson - 1
+-- Cours Roadmap and Projects
   -- Cours Roadmap and Projects
 
--- Lesson - 2 
+-- Building Our First React App
   -- Building Our First React App
 
--- Lesson - 3
+-- Watch Before Start
   -- Watch Before Start
 
--- Lesson - 4
+-- Read Before Start
   -- Read Before Start
 
--- Lesson - 5
+-- Download Course Matrial
   -- Download Course Matrial
   
 < --- End Section 1 --- >
@@ -23,10 +23,10 @@
 
 < --- Start Section 2 --- >
 
--- Lesson - 1
+-- Intro to Part 1
   -- Intro to Part 1
   
--- Lesson - 2
+-- Useful Resourses for Part 1
   -- Useful Resourses for Part 1
 
 < --- End Section 2 --- >
@@ -34,3 +34,41 @@
 
 
 
+< --- Start Section 3 --- >
+
+-- Section Overview
+    -- Why React ?
+    -- What is React ?
+    -- React vs Vanilla JS
+    -- Setup new React apps
+  
+-- Why Do Front-End Frameworks Exist ?
+    --  SSR ( Server Side Rendering )  - CSR ( Client Side Rendering )
+    
+-- React vs Vanilla JS
+    -- The Main Diffrence is in the sync
+    -- In Vanilla JS we make everything manually
+    -- In React everything is dynamic 
+    -- In React we don'r need to give the element that we will working on it any class 
+  
+-- What is React ?
+  -- React is a JS librrary for building user interfaces
+  -- React is ( Declarative - Component-Based - State-Driven )
+  -- Created By Facebook
+
+-- Lesson - 5
+  -- Intro to Part 1
+  
+-- Lesson - 6
+  -- Useful Resourses for Part 1
+
+-- Lesson - 7
+  -- Intro to Part 1
+  
+-- Lesson - 8
+  -- Useful Resourses for Part 1
+
+-- Lesson - 9
+  -- Intro to Part 1
+  
+< --- End Section 3 --- >
