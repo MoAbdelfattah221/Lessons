@@ -56,19 +56,73 @@
   -- React is ( Declarative - Component-Based - State-Driven )
   -- Created By Facebook
 
--- Lesson - 5
-  -- Intro to Part 1
+-- Setting Up our development
+  -- VS
+  -- Node.js
+  -- NPM
   
--- Lesson - 6
-  -- Useful Resourses for Part 1
-
--- Lesson - 7
-  -- Intro to Part 1
   
--- Lesson - 8
-  -- Useful Resourses for Part 1
+-- Pure React
+  -- Steps to create a Pure React Project
+    -- Create a HTML file
+  
+    -- Put in the end of the body the CDN's of React
+      -- <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+      -- <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+    -- In the body of the HTML create an element and give it an ID called root
+  
+    -- Open a script element in the body and make the type of it "text/babel"
+  
+    -- inside the script tag we will write our logic
+  
+    -- at the end of it we will initalize an variable called root 
+  
+    -- root content 'const root = ReactDOM.createRoot(document.getElementById('root'));'
+  
+    -- root.render(<Componenet/>)
 
--- Lesson - 9
-  -- Intro to Part 1
+-- A Quick Look at React's Official Documentation
+  -- A Quick Look at React's Official Documentation
+  
+-- Setting Up a New React Project: The Options
+  
+  -- There is 2 ways to create react app ( create-react-app - vite )
+  
+  -- The Diffrence between them
+  
+    -- Create-React-App
+      -- Complete Starter Kit for react applications
+      -- Everything is already configured ( ESLint - Prettier - Jest - Babel )
+     -- Uses slow and outdated techno;ogies ( WebPack )
+  
+    -- Vite
+      -- Modern Build Tool that contains a template for setting up react applications
+      -- Need to manually set up ESLint
+      -- Extremely fast (HMR) Hot Module Replacement
+  
+  -- React Frameworks
+    -- Next
+    -- Remix
+
+
+
+-- Setting Up a Project With Create-React-App
+  -- Open CMD
+  -- Choose the folder that you want to create your project there
+  -- npx create-react-app "app-name" 
+  -- cd app-name
+  -- code .
+  -- npm start
   
 < --- End Section 3 --- >
+
+
+
+
+
+
+
+
+
+
