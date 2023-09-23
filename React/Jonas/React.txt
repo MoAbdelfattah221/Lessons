@@ -49,7 +49,7 @@
     -- The Main Diffrence is in the sync
     -- In Vanilla JS we make everything manually
     -- In React everything is dynamic 
-    -- In React we don'r need to give the element that we will working on it any class 
+    -- In React we don't need to give the element that we will working on it any class 
   
 -- What is React ?
   -- React is a JS librrary for building user interfaces
@@ -94,7 +94,7 @@
     -- Create-React-App
       -- Complete Starter Kit for react applications
       -- Everything is already configured ( ESLint - Prettier - Jest - Babel )
-     -- Uses slow and outdated techno;ogies ( WebPack )
+      -- Uses slow and outdated techno;ogies ( WebPack )
   
     -- Vite
       -- Modern Build Tool that contains a template for setting up react applications
@@ -110,9 +110,9 @@
 -- Setting Up a Project With Create-React-App
   -- Open CMD
   -- Choose the folder that you want to create your project there
-  -- npx create-react-app "app-name" 
+  -- npx create-react-app "app-name".
   -- cd app-name
-  -- code .
+  -- code.
   -- npm start
   
 < --- End Section 3 --- >
@@ -155,8 +155,69 @@
     -- EX
        const array = [1,2,3];
        const firstNum = array[0]?.toFixed();   
-       // if the first number is  empty or undefinedthe result will be undefined
+       // if the first number is  empty or undefined the result will be undefined
 
+-- Array Map
+  -- Map Syntax
+    -- array.map( (el) ) => el * 2);
+    -- Array Map method returns an array 
+
+-- Array Filter
+  -- Filter Syntax
+    -- array.filter( (el) => (condition) )
+    
+-- Array Reduce
+  -- Reduce Syntax
+    -- array.reduce( ( acc ,  el ) => acc + el.pagesNum , starting value )
+    -- Reduce returns just one value
+    -- The acc is the place that we storing the number of the pages inside.
+    
+ -- Array Sort
+   -- array.sort( (a,b) => a - b )
+   -- if we using the sort method , it effects on the original array and the origenal array will be the same result of the sorting array
+   -- if we want to avoid this probel we using slice method on the orignal array. // orignal.slice().sort( ( a,b ) => a - b )
+
+-- Working With Immutable Arrays
+  -- Working with immutable arrays in JavaScript involves creating new arrays instead of modifying existing ones.
+  -- EX
+  --------
+    	// Using concat()
+	const originalArray = [1, 2, 3];
+	const newArray = originalArray.concat(4);
+
+	// Using the spread operator
+	const newArray2 = [...originalArray, 4];
+	
+	// Using Slice
+	const originalArray = [1, 2, 3, 4, 5];
+	const newArray = originalArray.slice(0, 3); // Creates [1, 2, 3]
+	
+	// Using Filter
+	const originalArray = [1, 2, 3];
+	const newArray = originalArray.map((item) => item * 2); // Creates [2, 4, 6]
+
+
+-- Asynchronous JavaScript: Promises
+  -- Promise Kinds 
+    -- Pendding
+    -- Rejected
+    -- Fulfilled
+   
+  -- Fetch returns a promise
+  -- Fetch Syntax
+   fetch(" API URL ")
+    .then( res => res.json() )
+    .then( data => console.log(data) )
+    
+ -- Asynchronous JavaScript: Async - Await
+   -- The Async Await is more cleaner and origanizer more than the than method 
+   -- The Same function in the async await
+     -- async function getPosts(){
+       	const res = await fetch(" API URL ")
+       	const data = await res.json();
+       	console.log(data)
+      }
+      getPosts();
 < --- End Section 4 --- >
 
 
