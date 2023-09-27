@@ -223,7 +223,18 @@
 
 
 
-
+< --- Start Section 5 --- >
+  -- Section Overview
+    -- We have a new 4 terms
+      -- Component
+      -- Props
+      -- JSX
+      -- State
+   
+  -- Rendering the Root Component and Strict Mode
+    -- Create a react project using create-react-app
+    -- React Strict Mode renders doms twice to find bugs
+< --- End Section 5 --- >
 
 
 

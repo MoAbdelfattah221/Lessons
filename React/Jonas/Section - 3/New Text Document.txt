@@ -1,0 +1,82 @@
+< --- Start Section 3 --- >
+
+-- Section Overview
+    -- Why React ?
+    -- What is React ?
+    -- React vs Vanilla JS
+    -- Setup new React apps
+  
+-- Why Do Front-End Frameworks Exist ?
+    --  SSR ( Server Side Rendering )  - CSR ( Client Side Rendering )
+    
+-- React vs Vanilla JS
+    -- The Main Diffrence is in the sync
+    -- In Vanilla JS we make everything manually
+    -- In React everything is dynamic 
+    -- In React we don't need to give the element that we will working on it any class 
+  
+-- What is React ?
+  -- React is a JS librrary for building user interfaces
+  -- React is ( Declarative - Component-Based - State-Driven )
+  -- Created By Facebook
+
+-- Setting Up our development
+  -- VS
+  -- Node.js
+  -- NPM
+  
+  
+-- Pure React
+  -- Steps to create a Pure React Project
+    -- Create a HTML file
+  
+    -- Put in the end of the body the CDN's of React
+      -- <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+      -- <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+    -- In the body of the HTML create an element and give it an ID called root
+  
+    -- Open a script element in the body and make the type of it "text/babel"
+  
+    -- inside the script tag we will write our logic
+  
+    -- at the end of it we will initalize an variable called root 
+  
+    -- root content 'const root = ReactDOM.createRoot(document.getElementById('root'));'
+  
+    -- root.render(<Componenet/>)
+
+-- A Quick Look at React's Official Documentation
+  -- A Quick Look at React's Official Documentation
+  
+-- Setting Up a New React Project: The Options
+  
+  -- There is 2 ways to create react app ( create-react-app - vite )
+  
+  -- The Diffrence between them
+  
+    -- Create-React-App
+      -- Complete Starter Kit for react applications
+      -- Everything is already configured ( ESLint - Prettier - Jest - Babel )
+      -- Uses slow and outdated techno;ogies ( WebPack )
+  
+    -- Vite
+      -- Modern Build Tool that contains a template for setting up react applications
+      -- Need to manually set up ESLint
+      -- Extremely fast (HMR) Hot Module Replacement
+  
+  -- React Frameworks
+    -- Next
+    -- Remix
+
+
+
+-- Setting Up a Project With Create-React-App
+  -- Open CMD
+  -- Choose the folder that you want to create your project there
+  -- npx create-react-app "app-name".
+  -- cd app-name
+  -- code.
+  -- npm start
+  
+< --- End Section 3 --- >
