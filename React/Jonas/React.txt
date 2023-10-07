@@ -234,6 +234,32 @@
   -- Rendering the Root Component and Strict Mode
     -- Create a react project using create-react-app
     -- React Strict Mode renders doms twice to find bugs
+    
+  -- Before We Start Coding: Debugging
+    -- Make sure that the application is actully running  
+    -- If I want to stop the running " CTR + C "
+    -- Reload the page
+    -- Search the error
+  
+  -- Components as Building Blocks
+    -- How can we using componenets in react
+
+  -- Creating and Reusing Components
+    -- Practical on Pizza project
+
+  -- What is JSX ?
+    -- JSX is an extension of Javascript
+    -- Babel converts react to JS
+ 
+  -- Creating More Components
+    -- Practical Session 
+ 
+  -- Javascript Logic in Componenets
+ 
+  -- Separation of Concerns
+    -- Each component responsible of it self ( Logic , Data , Apperance )
+ 
+  -- Styling React Applications
 < --- End Section 5 --- >
 
 
