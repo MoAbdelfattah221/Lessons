@@ -260,6 +260,17 @@
     -- Each component responsible of it self ( Logic , Data , Apperance )
  
   -- Styling React Applications
+  
+  -- Passing and Receiving Props
+    -- Props is a coumminication channel between parenat and child component
+    -- How to send and receive props
+    -- props is an object
+  
+  -- Props, Immutability, and One-Way Data Flow
+    -- Props are Immutable
+    -- Props is just for read
+  
+  -- CHALLENGE #1: Profile Card (v1)
 < --- End Section 5 --- >
 
 
