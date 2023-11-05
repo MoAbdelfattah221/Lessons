@@ -175,7 +175,7 @@
  -- Array Sort
    -- array.sort( (a,b) => a - b )
    -- if we using the sort method , it effects on the original array and the origenal array will be the same result of the sorting array
-   -- if we want to avoid this probel we using slice method on the orignal array. // orignal.slice().sort( ( a,b ) => a - b )
+   -- if we want to avoid this prooblem we using slice method on the orignal array. // orignal.slice().sort( ( a,b ) => a - b )
 
 -- Working With Immutable Arrays
   -- Working with immutable arrays in JavaScript involves creating new arrays instead of modifying existing ones.
@@ -262,7 +262,7 @@
   -- Styling React Applications
   
   -- Passing and Receiving Props
-    -- Props is a coumminication channel between parenat and child component
+    -- Props is a coumminication channel between parent and child component
     -- How to send and receive props
     -- props is an object
   
@@ -271,6 +271,16 @@
     -- Props is just for read
   
   -- CHALLENGE #1: Profile Card (v1)
+  
+  -- The Rules of JSX
+
+  -- Rendering Lists
+
+  -- Conditional Rendering With Ternaries
+
+  -- 
+
+
 < --- End Section 5 --- >
 
 
