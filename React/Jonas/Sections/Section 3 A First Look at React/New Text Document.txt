@@ -1,0 +1,36 @@
+8. Section Overview
+
+
+9. Why Do Front-End Frameworks Exist?
+--------------------------------------
+ 1- Frontend web applications are all about: Handling data and Displaying it in the user interface. 
+ 2- User Interface needs to stay in SYNC with data.
+ 3- The Diffrence Between Vanilla JS and JS Frameworks
+   1- Requires lots of direct DOM manipulation and Traversing Imperative
+   2- Data is usually stored in the DOM, shared across entirre app ( Hard to Reason + Bugs)
+   
+ 4- Front-End Frameworks Exist because keeping a user interface in SYNC with data is really hard.
+ 5- The frameworks enforce a correct way of structuring and writing code 
+ 
+ 
+10. React vs. Vanilla JavaScript
+--------------------------------
+ 1- Comparing of a React Project and it'ssame Vanilla JS Project
+ 
+11. What is React?
+------------------
+ 1- React is a javascript library to build user interface.
+ 2- React Created by Facebook.
+ 3- React is popular, Declartive, Component-Based and State Driven.
+ 4- We describe how components look like ad how they work using a declartive syntax called JSX.
+ 5- Declarative: telling react what a component should look like based on current data/state.
+ 6- React is abstraction away from DOM.
+ 7- JSX: a syntax combines HTML, CSS and Javascript as well as refactoring other components.
+ 8- React has a Framworkes such as Next.js and Remix.
+ 
+ 
+12. Setting Up Our Development Environment
+13. Pure React
+14. A Quick Look at React's Official Documentation
+15. Setting Up a New React Project: The Options
+16. Setting Up a Project With Create-React-App

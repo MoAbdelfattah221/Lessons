@@ -1,9 +1,0 @@
-< --- Start Section 2 --- >
-
--- Intro to Part 1
-  -- Intro to Part 1
-  
--- Useful Resourses for Part 1
-  -- Useful Resourses for Part 1
-
-< --- End Section 2 --- >
