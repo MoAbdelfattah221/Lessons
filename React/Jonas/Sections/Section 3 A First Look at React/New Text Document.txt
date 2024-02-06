@@ -30,7 +30,39 @@
  
  
 12. Setting Up Our Development Environment
+------------------------------------------
+ 1- To setup a react project
+   1- Download Node.js
+   2- Download NPM
+   3- npx create-react-app "app-name"
+   4- npm start
+   
+ 
 13. Pure React
+--------------
+ 1- To start a pure react project
+   1- Create a html file. 
+   2- Add react script.
+   3- create a div element and give it an id called root.
+   4- Open a script tag.
+   5- Create a component called App.
+   6- Create a root.
+   7- Render the root.
+   Example
+   -------
+   function App(){
+     return React.createElement("header", null, "Header Content!");
+   }
+   const root = ReactDOM.createRoot(document.getElementById("root"))
+   root.render(React.createElement(App));
+ 
+ 
 14. A Quick Look at React's Official Documentation
+
 15. Setting Up a New React Project: The Options
+-----------------------------------------------
+ 1- We have 2 options to setup a react app
+   1- Create-React-App
+   2- Vite
+
 16. Setting Up a Project With Create-React-App

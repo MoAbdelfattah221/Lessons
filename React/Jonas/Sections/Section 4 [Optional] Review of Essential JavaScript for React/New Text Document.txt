@@ -1,0 +1,40 @@
+17. Section Overview
+
+18. Destructuring Objects and Arrays
+------------------------------------
+ 1- To destruct an object - it's depend on property name // const {name, description} = bookObj;
+ 2- To destruct an array - it's depend on array order // const [name, description] = bookArr;
+ 
+
+
+19. Rest/Spread Operator
+------------------------
+ 1- Rest/Spread Syntax ...
+   1- The spread operator (...) is used for expanding elements in an iterable (like arrays or objects). 
+   2- The spread element must be the last in a destructring pattern.
+   3- We can use it on arraies and objeects.
+   Example
+   -------
+   const newArray = [...oldArray];
+   const newObj = {...oldObj};
+ 
+ 
+ 
+20. Template Literals
+---------------------
+ 1-
+ 2-
+ 3-
+ 
+  
+21. Ternaries Instead of if/else Statements
+22. Arrow Functions
+23. Short-Circuiting And Logical Operators: &&, ||, ??
+24. Optional Chaining
+25. The Array map Method
+26. The Array filter Method
+27. The Array reduce Method
+28. The Array sort Method
+29. Working With Immutable Arrays
+30. Asynchronous JavaScript: Promises
+31. Asynchronous JavaScript: Async/Await
