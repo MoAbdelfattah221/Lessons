@@ -4,15 +4,17 @@
 ------------------------------------
  1- To destruct an object - it's depend on property name // const {name, description} = bookObj;
  2- To destruct an array - it's depend on array order // const [name, description] = bookArr;
- 
+ 3- the spread operator is used to expand elements, making copies or merging them, while the rest operator 
+ is used to collect elements, grouping them into a single variable, especially in function parameters or destructuring assignments
 
 
 19. Rest/Spread Operator
 ------------------------
  1- Rest/Spread Syntax ...
    1- The spread operator (...) is used for expanding elements in an iterable (like arrays or objects). 
-   2- The spread element must be the last in a destructring pattern.
-   3- We can use it on arraies and objeects.
+   2- The rest operator is used to collect the remaining elements into a single variable, especially in function parameters.
+   3- The spread element must be the last in a destructring pattern.
+   4- We can use it on arraies and objeects.
    Example
    -------
    const newArray = [...oldArray];
@@ -22,19 +24,199 @@
  
 20. Template Literals
 ---------------------
- 1-
- 2-
- 3-
+ 1- Template Literals is an ES6 features and syntax enhancements to make JavaScript more powerful, expressive.
+ 2- It allows to us to using variables and expression into strings.
+ 3- We are writing ES6 into ``.
+ Example
+ -------
+ console.log(`My name is #{name}`);
+ console.log(`{5 + 5} = ?`);
  
   
+  
 21. Ternaries Instead of if/else Statements
+-------------------------------------------
+ 1- Ternery Sytax (conadition) ? if-true : if-flase;
+ 2- Ternery returns a result. 
+ 
+ 
+ 
 22. Arrow Functions
+-------------------
+ 1- The Arrow function is a feature have been introduced in ES6.
+ 2- Arrow Fnction Syntax - const fun = (a,b) => a + b;
+ 
+ 
+ 
 23. Short-Circuiting And Logical Operators: &&, ||, ??
+------------------------------------------------------
+ 1- || OR 
+ 2- && AND
+ 3- ?? Nullish
+ 4- The Diffrence between ?? and || 
+  1- ?? will return the second value when the first is null or undefind
+  2- || will return the another value when the other is any falsy value // 0 "" false.
+ 
+ 
 24. Optional Chaining
+---------------------
+ 1- Optional chaining is a feature introduced in some programming languages to simplify the process of accessing properties
+  or methods on nested objects or calling methods on potentially undefined or null values. It helps avoid the need for explicit
+  null or undefined checks before accessing nested properties or calling methods.
+ 
+ Example
+ let streetNameWithChaining = user?.address?.street?.name ?? "Unknown";
+ 
+ 
+ 
 25. The Array map Method
+------------------------
+ 1- Map returns a new array based on the orignal one.
+ 2- Map Syntax
+   const newArr = oldArr.map((el) => el + 2);
+ 
+
+ 
 26. The Array filter Method
+---------------------------
+1- Filter returns a new array based on the orignal one.
+2- Filter Syntax
+ const newArr = oldArr.filter(el => el/2 == 0); // returns Even numbers
+
+
+
 27. The Array reduce Method
+---------------------------
+ 1- Reduce returns one number.
+ 2- Reduce Syntax 
+  const newArr = oldArr.reduce((nums ,acc){
+  	return acc + nums;
+  }, starterValue);
+ 
+ 3- The accumulator is the first value of the final value.
+
+
+
+
 28. The Array sort Method
+-------------------------
+ 1- The Sort method is used to arrange elements of an array in a specific order.
+ 2- Sort Syntax 
+  const newArr = oldArr.sort();
+ 3- Sort retruns a new array.
+ 4- Sort  converts elements into strings and then sorts them based on their Unicode code points.
+ 5- Sort effects on the orignal array to avoid it we need to use slice.
+ Example
+ const newArr = oldArr.slice().sort();
+ 
+ 
+
 29. Working With Immutable Arrays
+---------------------------------
+ 1- Adding a new object to an array of objects without change the orignal one
+  const afterAddingArr = [...oldArr , newObject];
+ 2- Deleting an object from the array
+  const afterDeletingArr = afterAddingArr.filter(book => book.id !== 3)
+ 3- Updating an object in the array
+  const afterUpdatingArr =  afterDeletingArr.map((book) => {
+  	return book.id === 1 ? {...book , pageOfTheBook: 100} : book; 
+  })
+ 4- 
+ 
+ 
+
 30. Asynchronous JavaScript: Promises
+-------------------------------------
+ 1- Fetch returns a Promise
+ 2- The Promise has 3 cases " Pending - Rejected - Fulfilled "
+ Example
+ fetch("API")
+ .then(res => res.json())
+ .then(data => console.log(data))
+
+
+
 31. Asynchronous JavaScript: Async/Await
+----------------------------------------
+ 1- async and await are keywords used in asynchronous programming to simplify working with promises. 
+ 2- The async keyword is used to define an asynchronous function. 
+ 3- An async function always returns a promise implicitly.
+ 4- The await keyword is used inside an async function to wait for a promise to resolve or reject. 
+ 5- It can only be used inside an async function.
+ Example
+ // Function to fetch posts
+	async function fetchPosts() {
+  	// Using the fetch API to make a GET request to the /posts endpoint
+  	const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+
+ 	 // Checking if the request was successful (status code 200)
+  	if (!response.ok) {
+  	  // Handling the error by logging and returning
+  	  console.error(`HTTP error! Status: ${response.status}`);
+	    return;
+	  }
+
+  	// Parsing the response JSON
+ 	 const posts = await response.json();
+
+ 	 // Logging the list of posts
+  	console.log('List of posts:', posts);
+	}
+
+	// Calling the fetchPosts function
+	fetchPosts();
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

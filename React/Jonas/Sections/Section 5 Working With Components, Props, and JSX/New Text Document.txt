@@ -1,0 +1,223 @@
+32. Section Overview
+--------------------
+ 1- Componenets.
+ 2- Props.
+ 3- JSX.
+ 4- Rendring List.
+ 5- Conditional Rending.
+ 
+ 
+ 
+33. Rendering the Root Component and Strict Mode
+------------------------------------------------
+ 1- Strict Mode renders all components twice in order to find certain bugs
+ 
+ 
+ 
+34. Before We Start Coding: Debugging
+-------------------------------------
+ 1- If we're facing any Error what we should do ?
+   1- Make sure that the application is actually running.
+   2- Restrat the app.
+   3- Reload Pthe page.
+   4- Open console to see the unexpected errors.
+   5- Copy the error and search about it.
+   6- Search about the bugs that in the code.
+
+
+
+35. Components as Building Blocks
+---------------------------------
+ 1- React applications are entirely made out of componenets.
+ 2- Building blocks of user interfaces in react.
+ 3- Piece of UI that has its own data, logic and apperance
+ 4- We build complex UIs by buuilding multiple components and combining them.
+ 5- Componenets can be reused, nested inside each other, and pass data betweem them.
+ 
+ 
+ 
+36. Creating And Reusing a Component
+------------------------------------
+ 1- We write new componenet using functions.
+ 2- Component name must starts with a capital letter.
+ 3- Every each compoenet must return anything.
+ 4- Each component can only return one element.
+ 
+ 
+ 
+ 
+37. What is JSX?
+----------------
+ 1- Declarative syntax to describe what components look like and how they work.
+ 2- Components must return a block of JSX.
+ 3- JSX is an extension of JS that allows us to embed JS, CSS and react components into HTML.
+ 4- Each JSX element is converted to a React.createElement function call.
+ 5- We could use react without JSX ( Really Hard To Do )
+ 6- Babel is the way that converting JSX to React.createElement.
+ 7- The Difference between Declarative and Imperative
+   1- Imperative 
+     1- How to do things?
+     2- Manual DOM element selections and DOM traversing.
+     3- Step by step DOM mutations until we rech the desired UI.
+   2- Declarative 
+     1- What we want to see?
+     2- Descript what UI should to be like using JSX based on the current data.
+     3- React is an abstraction away from DOM
+ 
+ 
+ 
+38. Creating More Components
+----------------------------
+ 1- Creating more componenets for the pizza project.
+ 2- Header - Footer - Menu - Pizza componenets.
+ 
+ 
+ 
+39. JavaScript Logic in Components
+----------------------------------
+ 1- Some logic about JS.
+
+
+
+40. Separation of Concerns (SoC)
+--------------------------------
+ 1- Traditional Sepration of concerns (One technology per file) means that we have
+   1- One file for HTML.
+   1- One file for CSS.
+   1- One file for JS.
+ 2- Modern Sepration of Concerns (React)
+  1- We have one component has it's HTML, CSS and JS written in JSX.
+ 3- JSX compines HTML, CSS and JS into one block of code (Component).
+ 4- Is react has a sepration of concerns?
+  1- Yes because each componenet has it's HTML, CSS and JS.
+ 
+ 
+ 
+41. Styling React Applications
+------------------------------
+ 1- How to use CSS in react
+   1- Internal Styling. // style={{fontSize: "21px"}}
+   2- External Styling.
+   3- CSS Preproccecor such as (SASS - LESS).
+   4- CSS Framworks such as (Bootstrap - Tailwind).
+   5- JS Styling Libraries.
+ 
+ 
+ 
+42. Passing and Receiving Props
+-------------------------------
+ 1- Props is how we pass data between componenets (parent to clilderns).
+ 2- To define props we do it in two steps 
+   1- Pass the props into the component.
+   2- Receive the props in the componenet we pss them into.
+ 3- Pass prop
+   <Pizza propName={propValue} />
+ 4- Receive Prop 
+   function Pizza (props){
+   	return(
+   		<p>{props.propName}</p>
+   	)
+   }
+ 5- To send a number via props we put it into {}.
+
+ 
+ 
+43. Props, Immutability, and One-Way Data Flow
+----------------------------------------------
+ 1- We can pass anything via props (Single value, Arrays, Objects, Functions, Components).
+ 2- Data in react is Props and States. 
+ 3- Props are immutable (read only can't change them).
+ 4- Props is data coming from outside, and can be only updated by thre parent component.
+ 5- State is internal that can be updated by the component' logic.
+ 6- If you need to mutate props you actually need state.
+ 7- Props are just objects.
+ 8- Why we can't mutate props in react?.
+   1- Mutating props would affect parent creating Side Effects (not pure).
+   2- When you copy an object and mutate the copy the orignal object will be muutated.
+   3- Now if you change an object is located outside of the componenet function that function has then created a Side Effect.
+   4- The side effect happens whenever you change some data that's located outsice of the current function.
+   5- React is all about pure functions (functions without side effects).
+   6- Component have to be pure functions in terms of props and state, This allows React to optimize apps, avoid bugs, make apps predictable, make apps predictable.
+ 9- React used ONE_WY data flow (Data can only be passed from parent to childern component).
+ 
+ 
+ 
+ 
+44. CHALLENGE #1: Profile Card (v1)
+45. The Rules of JSX
+46. Rendering Lists
+47. Conditional Rendering With &&
+48. Conditional Rendering With Ternaries
+49. Conditional Rendering With Multiple Returns
+50. Extracting JSX Into a New Component
+51. Destructuring Props
+52. React Fragments
+53. Setting Classes and Text Conditionally
+54. Section Summary
+55. CHALLENGE #2: Profile Card (v2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
