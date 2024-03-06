@@ -40,7 +40,7 @@
 ------------------------------------
  1- We write new componenet using functions.
  2- Component name must starts with a capital letter.
- 3- Every each compoenet must return anything.
+ 3- Every each component must returns anything.
  4- Each component can only return one element.
  
  
@@ -106,7 +106,7 @@
  
 42. Passing and Receiving Props
 -------------------------------
- 1- Props is how we pass data between componenets (parent to clilderns).
+ 1- Props is how we pass data between componenets (parent to childrens).
  2- To define props we do it in two steps 
    1- Pass the props into the component.
    2- Receive the props in the componenet we pss them into.
@@ -131,7 +131,7 @@
  5- State is internal that can be updated by the component' logic.
  6- If you need to mutate props you actually need state.
  7- Props are just objects.
- 8- Why we can't mutate props in react?.
+ 8- Why we can't mutate props in react?
    1- Mutating props would affect parent creating Side Effects (not pure).
    2- When you copy an object and mutate the copy the orignal object will be muutated.
    3- Now if you change an object is located outside of the componenet function that function has then created a Side Effect.
@@ -142,11 +142,53 @@
  
  
  
- 
+-----------------------------------
 44. CHALLENGE #1: Profile Card (v1)
+-----------------------------------
+
+
+
 45. The Rules of JSX
+--------------------
+ 1- JSX works essentailly like HTML, bit we can add JS mode by using {}.
+ 2- We can place Javascript expressions inside {}.
+ 3- Statements are not allowed.
+ 4- JSX produce a Javascript expression.
+ 5- Diffrence between JSX and HTML
+   1- className instead of class
+   2- htmlFor instead of for
+   3- Every tag needs to be closed </>.
+   4- All events handlers needs to be camelCase.
+   5- CSS insline styles wirtten in {{backGround="red"}};
+   6- Comments need to be in {}.
+   
+ 
+ 
+ 
 46. Rendering Lists
+-------------------
+ 1- How to render a list?
+ Exampel
+ -------
+ {pizzaData.map(pizza => (
+  <Pizza pizzaObj={pizza} />
+ ))}
+ 
+ 1- A Pizza component is being rendered.
+ 2- The pizzaObj is a prop being passed to the Pizza component.
+ 3- The value of the pizzaObj prop is set to the current pizza object from the iteration.
+ 
+ 
+ 
+  
 47. Conditional Rendering With &&
+---------------------------------
+ 1- && just warks if the condition is true.
+ 2- && Syntax
+  (condition) && reuslt; 
+
+ 
+ 
 48. Conditional Rendering With Ternaries
 49. Conditional Rendering With Multiple Returns
 50. Extracting JSX Into a New Component
